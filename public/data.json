@@ -4,7 +4,7 @@
     "title": "KeyShot Classic Customer Case Studies - Digital Experience Design",
     "metaOgTitle": "KeyShot Case Studies | Digital Experience Design | Vyin AI",
     "metaOgDescription": "Discover how KeyShot leverages AI-powered design tools to create incredible digital experiences.",
-    "metaOgImage": null,
+    "metaOgImage": "https://picsum.photos/1200/630?random=15",
     "metaKeywords": "keyshot, case studies, digital experience, AI design, customer success, vyin ai, design tools",
     "pageType": "CASE_STUDY",
     "status": "PUBLISHED",
@@ -22,10 +22,10 @@
             "positionOrder": 1,
             "contentData": {
                 "rel": "noopener",
-                "url": "/case-studies",
-                "title": "Return to case studies listing page",
+                "url": "/",
+                "title": "Return to home",
                 "target": "_self",
-                "linkText": "← Back to Case Studies"
+                "linkText": "← Back to home"
             },
             "styleData": {
                 "layout": {
@@ -142,7 +142,7 @@
                 "title": "KeyShot Studios Logo",
                 "altText": "KeyShot Studios company logo",
                 "caption": "KeyShot Studios - Industry-leading 3D rendering and animation software",
-                "imageUrl": "/images/case-studies/keyshot-logo.png",
+                "imageUrl": "https://picsum.photos/250/80?random=1",
                 "metadata": {
                     "format": "PNG",
                     "fileSize": "45KB",
@@ -407,7 +407,7 @@
                         "id": "flux_logo",
                         "name": "FLUX",
                         "altText": "FLUX company logo",
-                        "imageUrl": "/images/brands/flux-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=2",
                         "websiteUrl": "https://flux.com",
                         "mediaFileId": 2001,
                         "openInNewTab": true
@@ -416,7 +416,7 @@
                         "id": "keyshot_logo",
                         "name": "KeyShot Studios",
                         "altText": "KeyShot Studios logo",
-                        "imageUrl": "/images/brands/keyshot-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=3",
                         "websiteUrl": "https://keyshot.com",
                         "mediaFileId": 2002,
                         "openInNewTab": true
@@ -425,7 +425,7 @@
                         "id": "rooftaters_logo",
                         "name": "ROOFTATERS",
                         "altText": "ROOFTATERS company logo",
-                        "imageUrl": "/images/brands/rooftaters-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=4",
                         "websiteUrl": "https://rooftaters.com",
                         "mediaFileId": 2003,
                         "openInNewTab": true
@@ -434,7 +434,7 @@
                         "id": "nebulae_logo",
                         "name": "Nebulae",
                         "altText": "Nebulae company logo",
-                        "imageUrl": "/images/brands/nebulae-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=5",
                         "websiteUrl": "https://nebulae.com",
                         "mediaFileId": 2004,
                         "openInNewTab": true
@@ -443,7 +443,7 @@
                         "id": "stigmi_logo",
                         "name": "Stigmi",
                         "altText": "Stigmi company logo",
-                        "imageUrl": "/images/brands/stigmi-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=6",
                         "websiteUrl": "https://stigmi.com",
                         "mediaFileId": 2005,
                         "openInNewTab": true
@@ -452,7 +452,7 @@
                         "id": "sellctin_logo",
                         "name": "Sellctin",
                         "altText": "Sellctin company logo",
-                        "imageUrl": "/images/brands/sellctin-logo.png",
+                        "imageUrl": "https://picsum.photos/150/60?random=7",
                         "websiteUrl": "https://sellctin.com",
                         "mediaFileId": 2006,
                         "openInNewTab": true
@@ -613,7 +613,7 @@
                             "style": "primary"
                         },
                         "image": {
-                            "url": "/images/case-studies/camping-lodge-card.jpg",
+                            "url": "https://picsum.photos/400/250?random=8",
                             "altText": "Camping Lodge product design case study"
                         },
                         "price": null,
@@ -628,7 +628,7 @@
                             "style": "primary"
                         },
                         "image": {
-                            "url": "/images/case-studies/challenge-card.jpg",
+                            "url": "https://picsum.photos/400/250?random=9",
                             "altText": "The Challenge communications consultancy case study"
                         },
                         "price": null,
@@ -643,7 +643,7 @@
                             "style": "primary"
                         },
                         "image": {
-                            "url": "/images/case-studies/fintech-card.jpg",
+                            "url": "https://picsum.photos/400/250?random=10",
                             "altText": "FinTech startup case study"
                         },
                         "price": null,
@@ -706,7 +706,7 @@
                 "author": "Sarah Johnson",
                 "company": "KeyShot Studios",
                 "position": "Design Director",
-                "authorImage": "/images/testimonials/sarah-johnson.jpg"
+                "authorImage": "https://picsum.photos/100/100?random=11"
             },
             "styleData": {
                 "layout": {
@@ -892,7 +892,7 @@
                 "title": "KeyShot Banner Image",
                 "altText": "KeyShot 3D rendering interface showcasing product design workflow",
                 "caption": "KeyShot professional 3D rendering and animation software interface",
-                "imageUrl": "/images/case-studies/keyshot-banner-foreground.jpg",
+                "imageUrl": "https://picsum.photos/800/450?random=12",
                 "metadata": {
                     "format": "JPEG",
                     "fileSize": "180KB",
@@ -946,7 +946,7 @@
                 "title": "Desktop Background",
                 "altText": "Abstract geometric background pattern for desktop display",
                 "caption": "Desktop background with modern geometric design elements",
-                "imageUrl": "/images/backgrounds/desktop-geometric-bg.jpg",
+                "imageUrl": "https://picsum.photos/1920/1080?random=13",
                 "metadata": {
                     "format": "JPEG",
                     "fileSize": "320KB",
@@ -1089,7 +1089,7 @@
                 "title": "Mobile Background",
                 "altText": "Mobile-optimized abstract background pattern",
                 "caption": "Mobile background with responsive design elements",
-                "imageUrl": "/images/backgrounds/mobile-geometric-bg.jpg",
+                "imageUrl": "https://picsum.photos/768/1024?random=14",
                 "metadata": {
                     "format": "JPEG",
                     "fileSize": "150KB",
