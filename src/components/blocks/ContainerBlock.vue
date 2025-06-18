@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { ContainerContentData, StyleData, SettingsData, ContentBlock } from '@/types/content-block.types'
+import type { ContainerContentData, StyleData, SettingsData, ContentBlock, ContainerContentSettings } from '@/types/content-block.types'
 import { getMergedStyles } from '@/utils/style-utils'
 import ContentBlockRenderer from '../ContentBlockRenderer.vue'
 
@@ -56,8 +56,8 @@ const containerClasses = computed(() => {
   const classes = ['container-block']
 
   // Add custom CSS classes from content data
-  if (props.content.cssClasses) {
-    classes.push(...props.content.cssClasses)
+  if (props.content.customClasses) {
+    classes.push(...props.content.customClasses)
   }
 
   // Add general custom classes from settings
@@ -78,7 +78,7 @@ const computedStyles = computed(() => {
   const styles = getMergedStyles(props.styles)
 
   // Apply container-specific settings from ContainerContentSettings
-  const containerSettings = props.settings.content?.container
+  const containerSettings = (props.settings.content as ContainerContentSettings)?.container
 
   if (containerSettings) {
     // Apply layout settings
@@ -95,42 +95,9 @@ const computedStyles = computed(() => {
     }
 
     // Apply spacing settings
-    if (containerSettings.spacing) {
-      const spacing = containerSettings.spacing
-      if (spacing.padding) {
-        const p = spacing.padding
-        if (p.top) styles.paddingTop = p.top
-        if (p.right) styles.paddingRight = p.right
-        if (p.bottom) styles.paddingBottom = p.bottom
-        if (p.left) styles.paddingLeft = p.left
-      }
-      if (spacing.margin) {
-        const m = spacing.margin
-        if (m.top) styles.marginTop = m.top
-        if (m.right) styles.marginRight = m.right
-        if (m.bottom) styles.marginBottom = m.bottom
-        if (m.left) styles.marginLeft = m.left
-      }
-    }
+    // Note: spacing, background, border are now handled via styleData
+    // Legacy support for container-specific settings can be added here if needed
 
-    // Apply background settings
-    if (containerSettings.background) {
-      const bg = containerSettings.background
-      if (bg.color) styles.backgroundColor = bg.color
-      if (bg.image) styles.backgroundImage = `url(${bg.image})`
-      if (bg.size) styles.backgroundSize = bg.size
-      if (bg.position) styles.backgroundPosition = bg.position
-      if (bg.repeat) styles.backgroundRepeat = bg.repeat
-    }
-
-    // Apply border settings
-    if (containerSettings.border) {
-      const border = containerSettings.border
-      if (border.width) styles.borderWidth = border.width
-      if (border.style) styles.borderStyle = border.style
-      if (border.color) styles.borderColor = border.color
-      if (border.radius) styles.borderRadius = border.radius
-    }
   }
 
   // Apply content data constraints
@@ -150,6 +117,7 @@ const sortedChildren = computed(() => {
   if (!props.children) return []
   return [...props.children].sort((a, b) => a.positionOrder - b.positionOrder)
 })
+
 </script>
 
 <style scoped>

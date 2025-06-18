@@ -10,8 +10,8 @@
     :target="content.target"
     :rel="content.rel"
     :title="content.title"
-    :tabindex="settings.content?.accessibility?.tabIndex"
-    :aria-label="settings.content?.accessibility?.ariaLabel"
+    :tabindex="(settings.content as any)?.accessibility?.tabIndex"
+    :aria-label="(settings.content as any)?.accessibility?.ariaLabel"
     v-show="settings.general?.isVisible !== false"
     @click="handleClick"
   >
@@ -45,7 +45,7 @@ const computedStyles = computed(() => {
     if (layout.position) styles.position = layout.position
     if (layout.maxWidth) styles.maxWidth = layout.maxWidth
     if (layout.textAlign) styles.textAlign = layout.textAlign
-    if (layout.zIndex) styles.zIndex = layout.zIndex
+    if (layout.zIndex) styles.zIndex = layout.zIndex.toString()
   }
 
   // Apply typography styles
@@ -53,9 +53,9 @@ const computedStyles = computed(() => {
     const typography = props.styles.typography
     if (typography.color) styles.color = typography.color
     if (typography.fontSize) styles.fontSize = typography.fontSize
-    if (typography.fontWeight) styles.fontWeight = typography.fontWeight
+    if (typography.fontWeight) styles.fontWeight = typography.fontWeight.toString()
     if (typography.fontFamily) styles.fontFamily = typography.fontFamily
-    if (typography.lineHeight) styles.lineHeight = typography.lineHeight
+    if (typography.lineHeight) styles.lineHeight = typography.lineHeight.toString()
     if (typography.textAlign) styles.textAlign = typography.textAlign
     if (typography.textDecoration) styles.textDecoration = typography.textDecoration
   }
@@ -80,7 +80,7 @@ const computedStyles = computed(() => {
   if (props.styles.effects) {
     const effects = props.styles.effects
     if (effects.boxShadow) styles.boxShadow = effects.boxShadow
-    if (effects.opacity) styles.opacity = effects.opacity
+    if (effects.opacity) styles.opacity = effects.opacity.toString()
     if (effects.transform) styles.transform = effects.transform
     if (effects.filter) styles.filter = effects.filter
     if (effects.transition) styles.transition = effects.transition
@@ -92,12 +92,12 @@ const computedStyles = computed(() => {
 
 const handleClick = (event: MouseEvent) => {
   // Track analytics if enabled
-  if (props.settings.content?.analytics?.trackClicks) {
+  if ((props.settings.content as any)?.analytics?.trackClicks) {
     console.log('Link clicked:', props.content.url)
 
     // Fire custom events if specified
-    if (props.settings.content.analytics.customEvents) {
-      props.settings.content.analytics.customEvents.forEach(eventName => {
+    if ((props.settings.content as any).analytics.customEvents) {
+      (props.settings.content as any).analytics.customEvents.forEach((eventName: string) => {
         console.log('Custom event:', eventName)
         // In a real app, you'd send this to your analytics service
       })

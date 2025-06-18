@@ -36,7 +36,7 @@
             :alt="logo.altText"
             :title="logo.name"
             class="logo-image"
-            :loading="settings.content?.lazyLoading?.enabled ? 'lazy' : 'eager'"
+            :loading="(settings.content as any)?.lazyLoading?.enabled ? 'lazy' : 'eager'"
           />
         </component>
       </div>

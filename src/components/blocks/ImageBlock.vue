@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     :id="settings.general?.customId"
     :class="[
       'image-block',
@@ -14,7 +14,7 @@
       :title="content.title"
       :width="content.dimensions.width"
       :height="content.dimensions.height"
-      :loading="settings.content?.lazyLoading ? 'lazy' : 'eager'"
+      :loading="loadingMode"
       :style="imageStyles"
       @error="handleImageError"
     />
@@ -36,9 +36,14 @@ interface Props {
 
 const props = defineProps<Props>()
 
+const loadingMode = computed(() => {
+  const imageSettings = props.settings.content as any
+  return imageSettings?.lazyLoading?.enabled ? 'lazy' : 'eager'
+})
+
 const computedStyles = computed(() => {
   const styles: Record<string, string> = {}
-  
+
   // Apply layout styles
   if (props.styles.layout) {
     const layout = props.styles.layout
@@ -50,17 +55,17 @@ const computedStyles = computed(() => {
     if (layout.position) styles.position = layout.position
     if (layout.maxWidth) styles.maxWidth = layout.maxWidth
     if (layout.textAlign) styles.textAlign = layout.textAlign
-    if (layout.zIndex) styles.zIndex = layout.zIndex
+    if (layout.zIndex) styles.zIndex = layout.zIndex.toString()
     if (layout.top) styles.top = layout.top
     if (layout.left) styles.left = layout.left
   }
-  
+
   // Apply background styles
   if (props.styles.background) {
     const background = props.styles.background
     if (background.color) styles.backgroundColor = background.color
   }
-  
+
   // Apply border styles
   if (props.styles.border) {
     const border = props.styles.border
@@ -69,31 +74,31 @@ const computedStyles = computed(() => {
     if (border.color) styles.borderColor = border.color
     if (border.radius) styles.borderRadius = border.radius
   }
-  
+
   // Apply effects
   if (props.styles.effects) {
     const effects = props.styles.effects
     if (effects.boxShadow) styles.boxShadow = effects.boxShadow
-    if (effects.opacity) styles.opacity = effects.opacity
+    if (effects.opacity) styles.opacity = effects.opacity.toString()
     if (effects.transform) styles.transform = effects.transform
     if (effects.filter) styles.filter = effects.filter
     if (effects.transition) styles.transition = effects.transition
     if (effects.cursor) styles.cursor = effects.cursor
   }
-  
+
   return styles
 })
 
 const imageStyles = computed(() => {
   const styles: Record<string, string> = {}
-  
+
   // Apply image-specific effects
   if (props.styles.effects) {
     const effects = props.styles.effects
     if (effects.objectFit) styles.objectFit = effects.objectFit
     if (effects.filter) styles.filter = effects.filter
   }
-  
+
   return styles
 })
 

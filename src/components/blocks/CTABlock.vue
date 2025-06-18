@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import type { CTAContentData, StyleData, SettingsData } from '@/types/content-block.types'
+import type { CTAContentData, StyleData, SettingsData, CTAContentSettings } from '@/types/content-block.types'
 
 interface Props {
   content: CTAContentData
@@ -65,7 +65,7 @@ const computedStyles = computed(() => {
     if (layout.position) styles.position = layout.position
     if (layout.maxWidth) styles.maxWidth = layout.maxWidth
     if (layout.textAlign) styles.textAlign = layout.textAlign
-    if (layout.zIndex) styles.zIndex = layout.zIndex
+    if (layout.zIndex) styles.zIndex = layout.zIndex.toString()
   }
 
   // Apply typography styles
@@ -73,9 +73,9 @@ const computedStyles = computed(() => {
     const typography = props.styles.typography
     if (typography.color) styles.color = typography.color
     if (typography.fontSize) styles.fontSize = typography.fontSize
-    if (typography.fontWeight) styles.fontWeight = typography.fontWeight
+    if (typography.fontWeight) styles.fontWeight = typography.fontWeight.toString()
     if (typography.fontFamily) styles.fontFamily = typography.fontFamily
-    if (typography.lineHeight) styles.lineHeight = typography.lineHeight
+    if (typography.lineHeight) styles.lineHeight = typography.lineHeight.toString()
     if (typography.textAlign) styles.textAlign = typography.textAlign
     if (typography.textDecoration) styles.textDecoration = typography.textDecoration
   }
@@ -100,7 +100,7 @@ const computedStyles = computed(() => {
   if (props.styles.effects) {
     const effects = props.styles.effects
     if (effects.boxShadow) styles.boxShadow = effects.boxShadow
-    if (effects.opacity) styles.opacity = effects.opacity
+    if (effects.opacity) styles.opacity = effects.opacity.toString()
     if (effects.transform) styles.transform = effects.transform
     if (effects.filter) styles.filter = effects.filter
     if (effects.transition) styles.transition = effects.transition
@@ -108,15 +108,16 @@ const computedStyles = computed(() => {
   }
 
   // Apply hover effects if hovered
-  if (isHovered.value && props.settings.content?.animationEffects?.hover) {
-    const hoverStyles = props.settings.content.animationEffects.hover
+  const ctaSettings = props.settings.content as CTAContentSettings
+  if (isHovered.value && ctaSettings?.animationEffects?.hover) {
+    const hoverStyles = ctaSettings.animationEffects.hover
     // Parse and apply hover styles
-    const hoverRules = hoverStyles.split(';').filter(rule => rule.trim())
-    hoverRules.forEach(rule => {
-      const [property, value] = rule.split(':').map(s => s.trim())
+    const hoverRules = hoverStyles.split(';').filter((rule: string) => rule.trim())
+    hoverRules.forEach((rule: string) => {
+      const [property, value] = rule.split(':').map((s: string) => s.trim())
       if (property && value) {
         // Convert CSS property names to camelCase
-        const camelProperty = property.replace(/-([a-z])/g, (g) => g[1].toUpperCase())
+        const camelProperty = property.replace(/-([a-z])/g, (g: string) => g[1].toUpperCase())
         styles[camelProperty] = value
       }
     })
@@ -126,9 +127,11 @@ const computedStyles = computed(() => {
 })
 
 const handleClick = (event: MouseEvent) => {
+  const ctaSettings = props.settings.content as CTAContentSettings
+
   // Apply click animation
-  if (props.settings.content?.animationEffects?.click) {
-    const clickStyles = props.settings.content.animationEffects.click
+  if (ctaSettings?.animationEffects?.click) {
+    const clickStyles = ctaSettings.animationEffects.click
     // Apply click animation temporarily
     const element = event.target as HTMLElement
     element.style.cssText += clickStyles
@@ -144,10 +147,10 @@ const handleClick = (event: MouseEvent) => {
   }
 
   // Track analytics
-  if (props.settings.content?.clickTracking?.enabled) {
+  if (ctaSettings?.analytics?.trackClicks) {
     console.log('CTA clicked:', {
-      eventName: props.settings.content.clickTracking.eventName,
-      customData: props.settings.content.clickTracking.customData
+      eventName: ctaSettings.analytics.customEvents?.[0] || 'cta_click',
+      customData: ctaSettings.analytics.customData
     })
   }
 }

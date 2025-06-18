@@ -1,7 +1,7 @@
 <template>
   <component
     :is="blockComponent"
-    :content="block.contentData"
+    :content="contentData"
     :styles="block.styleData"
     :settings="block.settingsData"
     :children="block.children"
@@ -56,6 +56,10 @@ const blockComponentMap = {
 
 const blockComponent = computed(() => {
   return blockComponentMap[props.block.blockType] || null
+})
+
+const contentData = computed(() => {
+  return props.block.contentData as any
 })
 </script>
 

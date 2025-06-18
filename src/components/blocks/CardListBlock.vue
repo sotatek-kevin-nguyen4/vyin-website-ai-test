@@ -23,7 +23,7 @@
             <img
               :src="card.image.url"
               :alt="card.image.altText"
-              :loading="settings.content?.lazyLoading?.enabled ? 'lazy' : 'eager'"
+              :loading="(settings.content as any)?.lazyLoading?.enabled ? 'lazy' : 'eager'"
             />
           </div>
           

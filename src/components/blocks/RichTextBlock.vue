@@ -54,7 +54,7 @@ const computedStyles = computed(() => {
     if (layout.position) styles.position = layout.position
     if (layout.maxWidth) styles.maxWidth = layout.maxWidth
     if (layout.textAlign) styles.textAlign = layout.textAlign
-    if (layout.zIndex) styles.zIndex = layout.zIndex
+    if (layout.zIndex) styles.zIndex = layout.zIndex.toString()
   }
   
   // Apply typography styles
@@ -62,9 +62,9 @@ const computedStyles = computed(() => {
     const typography = props.styles.typography
     if (typography.color) styles.color = typography.color
     if (typography.fontSize) styles.fontSize = typography.fontSize
-    if (typography.fontWeight) styles.fontWeight = typography.fontWeight
+    if (typography.fontWeight) styles.fontWeight = typography.fontWeight.toString()
     if (typography.fontFamily) styles.fontFamily = typography.fontFamily
-    if (typography.lineHeight) styles.lineHeight = typography.lineHeight
+    if (typography.lineHeight) styles.lineHeight = typography.lineHeight.toString()
     if (typography.textAlign) styles.textAlign = typography.textAlign
     if (typography.textDecoration) styles.textDecoration = typography.textDecoration
   }
@@ -93,7 +93,7 @@ const computedStyles = computed(() => {
   if (props.styles.effects) {
     const effects = props.styles.effects
     if (effects.boxShadow) styles.boxShadow = effects.boxShadow
-    if (effects.opacity) styles.opacity = effects.opacity
+    if (effects.opacity) styles.opacity = effects.opacity.toString()
     if (effects.transform) styles.transform = effects.transform
     if (effects.filter) styles.filter = effects.filter
     if (effects.transition) styles.transition = effects.transition

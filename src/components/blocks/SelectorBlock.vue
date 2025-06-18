@@ -150,7 +150,7 @@ const handleChange = () => {
   })
   
   // Handle form behavior settings
-  if (props.settings.content?.formBehavior?.submitOnChange) {
+  if ((props.settings.content as any)?.formBehavior?.submitOnChange) {
     // In a real app, you might trigger a form submission or API call here
     console.log('Auto-submitting due to change')
   }
