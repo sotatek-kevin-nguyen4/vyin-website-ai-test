@@ -2,283 +2,7 @@
 /**
  * TypeScript interfaces for Content Block styleData and settingsData
  * These interfaces define the structure of JSON data stored in the content_block table
- * Updated to follow the structure from new-content-block-data.interface.ts
  */
-
-export interface Page {
-  id: number
-  slug: string
-  title: string
-  metaOgTitle: string
-  metaOgDescription: string
-  metaOgImage: string | null
-  metaKeywords: string
-  pageType: 'CASE_STUDY' | 'PRODUCT' | 'NEWS' | 'BLOG'
-  status: 'PUBLISHED' | 'DRAFT'
-  parentPageId: number | null
-  publishedAt: number
-  creatorUserId: number
-  updaterUserId: number
-  createdAt: number
-  updatedAt: number
-  contentBlocks: ContentBlock[]
-}
-
-export interface ContentBlock {
-  id: number
-  selectorId: string
-  blockType: BlockType
-  positionOrder: number
-  contentData: ContentData
-  styleData: StyleData
-  settingsData: SettingsData
-  creatorUserId: number
-  updaterUserId: number
-  createdAt: number
-  updatedAt: number
-  parentBlockId?: number | null
-  depthLevel?: number
-  hierarchyPath?: string
-  children?: ContentBlock[]
-}
-
-export type BlockType =
-  | 'TEXT'
-  | 'RICH_TEXT'
-  | 'IMAGE'
-  | 'LINK'
-  | 'CTA'
-  | 'QUOTE'
-  | 'LOGO_LIST'
-  | 'CARD_LIST'
-  | 'SELECTOR'
-  | 'CONTAINER'
-  | 'VIDEO'
-  | 'HERO_BANNER'
-  | 'CUSTOM_HTML'
-
-// =============================================================================
-// CONTENT DATA INTERFACES - Actual Content Storage
-// =============================================================================
-
-// Content Data Interfaces
-export type ContentData =
-  | TextContentData
-  | RichTextContentData
-  | ImageContentData
-  | LinkContentData
-  | CTAContentData
-  | QuoteContentData
-  | LogoListContentData
-  | CardListContentData
-  | SelectorContentData
-  | ContainerContentData
-  | VideoContentData
-  | HeroBannerContentData
-  | ProductGridContentData
-  | NewsListContentData
-  | CustomHtmlContentData
-  | Record<string, any> // For extensibility
-
-export interface TextContentData {
-  text: string
-  language: string
-}
-
-export interface RichTextContentData {
-  htmlContent: string
-  highlightConfig?: {
-    highlightColor: string
-    highlightStyle: string
-    highlightedPhrases: string[]
-  }
-  plainTextFallback: string
-}
-
-export interface ImageContentData {
-  title: string
-  altText: string
-  caption: string
-  imageUrl: string
-  metadata: {
-    format: string
-    fileSize: string
-    colorSpace: string
-  }
-  dimensions: {
-    width: number
-    height: number
-    aspectRatio: string
-  }
-  mediaFileId: number
-}
-
-export interface LinkContentData {
-  rel: string
-  url: string
-  title: string
-  target: '_self' | '_blank'
-  linkText: string
-}
-
-export interface CTAContentData {
-  /** CTA text content (required) */
-  text: string
-  /** Destination URL (required) */
-  url: string
-  /** Visual display style (required) */
-  ctaType: 'button' | 'link' | 'banner'
-  /** Icon configuration (optional) */
-  icon?: {
-    /** Icon name/identifier */
-    name: string
-    /** Icon position relative to text */
-    position: 'left' | 'right' | 'top' | 'bottom'
-  }
-  /** Supporting descriptive text (optional) */
-  description?: string
-}
-
-export interface QuoteContentData {
-  quote: string
-  author: string
-  company: string
-  position: string
-  authorImage: string
-}
-
-export interface LogoListContentData {
-  logos: Logo[]
-  title: string
-  language: string
-  description: string
-}
-
-export interface Logo {
-  id: string
-  name: string
-  altText: string
-  imageUrl: string
-  websiteUrl: string
-  mediaFileId: number
-  openInNewTab: boolean
-}
-
-export interface CardListContentData {
-  cards: Card[]
-  title: string
-}
-
-export interface Card {
-  id: string
-  cta: {
-    url: string
-    text: string
-    style: string
-  }
-  image: {
-    url: string
-    altText: string
-  }
-  price: number | null
-  title: string
-  description: string
-}
-
-export interface SelectorContentData {
-  name: string
-  label: string
-  options: SelectorOption[]
-  placeholder: string
-  selectorType: 'dropdown' | 'radio' | 'checkbox'
-}
-
-export interface SelectorOption {
-  label: string
-  value: string
-  disabled: boolean
-  selected: boolean
-}
-
-export interface ContainerContentData {
-  /** HTML semantic element type for the container */
-  containerType?: 'div' | 'section' | 'article' | 'aside' | 'header' | 'footer' | 'main' | 'nav'
-  /** Container title/label for identification in the visual builder */
-  title?: string
-  /** Container description for documentation purposes */
-  description?: string
-  /** Custom HTML attributes to be applied to the container element */
-  customAttributes?: Record<string, string>
-  /** CSS class names to be applied to the container */
-  customClasses?: string[] // Standardized naming (was cssClasses)
-  /** Container layout type for visual builder hints */
-  layoutType?: 'flex' | 'grid' | 'block' | 'inline-block'
-  /** Minimum height constraint for the container */
-  minHeight?: string
-  /** Maximum width constraint for the container */
-  maxWidth?: string
-  /** Whether the container should be collapsible in the editor */
-  isCollapsible?: boolean
-  /** Default collapsed state in the editor */
-  isCollapsed?: boolean
-  /** Accessibility role for the container */
-  ariaRole?: string
-  /** Accessibility label for the container */
-  ariaLabel?: string
-}
-
-export interface VideoContentData {
-  mediaFileId?: number // For uploaded videos
-  url?: string // For external videos (YouTube, Vimeo)
-  type: 'upload' | 'youtube' | 'vimeo' | 'external'
-  title?: string
-  description?: string
-  thumbnail?: string // Thumbnail image URL or media file ID
-}
-
-export interface HeroBannerContentData {
-  title: string
-  subtitle?: string
-  description?: string
-  ctaText?: string
-  ctaLink?: string
-  ctaOpenInNewTab?: boolean
-  backgroundImage?: number // Media file ID
-  backgroundVideo?: number // Media file ID
-}
-
-export interface ProductGridContentData {
-  products: Array<{
-    title: string
-    description?: string
-    image?: number // Media file ID
-    link?: string
-    price?: string
-    badge?: string // "New", "Featured", etc.
-  }>
-  title?: string
-  description?: string
-}
-
-export interface NewsListContentData {
-  count: number // Number of articles to display
-  topicFilter?: number[] // Topic IDs to filter by
-  excludeIds?: number[] // Page IDs to exclude
-  sortBy: 'date' | 'title' | 'views' | 'custom'
-  sortOrder: 'asc' | 'desc'
-  showExcerpt?: boolean
-  showDate?: boolean
-  showAuthor?: boolean
-  showTags?: boolean
-}
-
-export interface CustomHtmlContentData {
-  html: string
-  css?: string
-  javascript?: string
-  externalScripts?: string[] // External script URLs
-  externalStyles?: string[] // External stylesheet URLs
-}
 
 // =============================================================================
 // STYLE DATA INTERFACES - Visual Appearance & Layout
@@ -300,9 +24,6 @@ export interface LayoutStyle {
   bottom?: string // "10px", "50%"
   left?: string // "10px", "50%"
   zIndex?: number // 1, 10, 100
-  textAlign?: string // Legacy support
-  gridColumn?: string // Grid positioning
-  gridRow?: string // Grid positioning
 }
 
 export interface FlexStyle {
@@ -344,7 +65,6 @@ export interface GridStyle {
     | 'space-around'
     | 'space-between'
     | 'space-evenly'
-  gap?: string // Legacy support
 }
 
 export interface TypographyStyle {
@@ -407,7 +127,6 @@ export interface EffectsStyle {
   backdropFilter?: string // "blur(10px)", "brightness(0.8)"
   transition?: string // "all 0.3s ease", "opacity 0.5s"
   cursor?: string // "pointer", "grab", "not-allowed"
-  objectFit?: string // Legacy support
 }
 
 export interface ResponsiveStyleData {
@@ -843,25 +562,6 @@ export interface ContainerContentSettings {
       maxChildren?: number
     }
   }
-  /** Container layout configuration */
-  container?: {
-    layout?: {
-      display?: 'block' | 'flex' | 'grid' | 'inline-block'
-      flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-      flexWrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
-      justifyContent?:
-        | 'flex-start'
-        | 'flex-end'
-        | 'center'
-        | 'space-between'
-        | 'space-around'
-        | 'space-evenly'
-      alignItems?: 'stretch' | 'flex-start' | 'flex-end' | 'center' | 'baseline'
-      gridTemplateColumns?: string
-      gridTemplateRows?: string
-      gridGap?: string
-    }
-  }
 }
 
 export interface SettingsData {
@@ -885,3 +585,278 @@ export interface SettingsData {
     | ContainerContentSettings
     | Record<string, any>
 }
+
+// =============================================================================
+// CONTENT DATA INTERFACES - Actual Content Storage
+// =============================================================================
+
+export interface TextContentData {
+  content: string // HTML or plain text content
+  format: 'html' | 'markdown' | 'plain'
+  version?: number // Content version for history
+}
+
+export interface ImageContentData {
+  mediaFileId: number // Reference to media_file table
+  altText: string
+  caption?: string
+  title?: string
+  link?: string // Optional link URL
+  openInNewTab?: boolean
+}
+
+export interface VideoContentData {
+  mediaFileId?: number // For uploaded videos
+  url?: string // For external videos (YouTube, Vimeo)
+  type: 'upload' | 'youtube' | 'vimeo' | 'external'
+  title?: string
+  description?: string
+  thumbnail?: string // Thumbnail image URL or media file ID
+}
+
+export interface QuoteContentData {
+  quote: string
+  author?: string
+  source?: string
+  date?: string
+  link?: string
+}
+
+export interface HeroBannerContentData {
+  title: string
+  subtitle?: string
+  description?: string
+  ctaText?: string
+  ctaLink?: string
+  ctaOpenInNewTab?: boolean
+  backgroundImage?: number // Media file ID
+  backgroundVideo?: number // Media file ID
+}
+
+export interface LogoListContentData {
+  /** Section title (optional) */
+  title?: string
+  /** Section description (optional) */
+  description?: string
+  /** Array of logo items (required, minimum 1 item) */
+  logos: Array<{
+    /** Media file ID reference */
+    mediaFileId: number
+    /** Unique identifier for the logo */
+    id: string
+    /** Logo name/company name */
+    name: string
+    /** Logo image URL */
+    imageUrl: string
+    /** Alt text for accessibility */
+    altText: string
+    /** Optional website URL */
+    websiteUrl?: string
+    /** Optional link URL (legacy support) */
+    link?: string
+    /** Whether to open link in new tab */
+    openInNewTab?: boolean
+  }>
+}
+
+export interface ProductGridContentData {
+  products: Array<{
+    title: string
+    description?: string
+    image?: number // Media file ID
+    link?: string
+    price?: string
+    badge?: string // "New", "Featured", etc.
+  }>
+  title?: string
+  description?: string
+}
+
+export interface NewsListContentData {
+  count: number // Number of articles to display
+  topicFilter?: number[] // Topic IDs to filter by
+  excludeIds?: number[] // Page IDs to exclude
+  sortBy: 'date' | 'title' | 'views' | 'custom'
+  sortOrder: 'asc' | 'desc'
+  showExcerpt?: boolean
+  showDate?: boolean
+  showAuthor?: boolean
+  showTags?: boolean
+}
+
+export interface CustomHtmlContentData {
+  html: string
+  css?: string
+  javascript?: string
+  externalScripts?: string[] // External script URLs
+  externalStyles?: string[] // External stylesheet URLs
+}
+
+/**
+ * Content data interface for LINK block type
+ * Represents clickable links with various target options and SEO attributes
+ */
+export interface LinkContentData {
+  /** The destination URL (required, must be valid URL) */
+  url: string
+  /** Display text for the link (required) */
+  linkText: string
+  /** Link target behavior (default: '_self') */
+  target?: '_blank' | '_self' | '_parent' | '_top'
+  /** SEO attributes like 'nofollow', 'noopener' (optional) */
+  rel?: string
+  /** Tooltip text displayed on hover (optional) */
+  title?: string
+}
+
+/**
+ * Content data interface for RICH_TEXT block type
+ * Supports rich HTML content with highlighting and accessibility features
+ */
+export interface RichTextContentData {
+  /** Sanitized HTML content (required) */
+  htmlContent: string
+  /** Plain text fallback for accessibility (optional) */
+  plainTextFallback?: string
+  /** Text highlighting configuration (optional) */
+  highlightConfig?: {
+    /** Color for highlighted text */
+    highlightColor: string
+    /** Style of highlighting */
+    highlightStyle: 'background' | 'underline' | 'border'
+    /** Array of phrases to highlight */
+    highlightedPhrases: string[]
+  }
+}
+
+/**
+ * Content data interface for CTA (Call-to-Action) block type
+ * Represents actionable elements like buttons and promotional banners
+ */
+export interface CTAContentData {
+  /** CTA text content (required) */
+  text: string
+  /** Destination URL (required) */
+  url: string
+  /** Visual display style (required) */
+  ctaType: 'button' | 'link' | 'banner'
+  /** Icon configuration (optional) */
+  icon?: {
+    /** Icon name/identifier */
+    name: string
+    /** Icon position relative to text */
+    position: 'left' | 'right' | 'top' | 'bottom'
+  }
+  /** Supporting descriptive text (optional) */
+  description?: string
+}
+
+/**
+ * Content data interface for SELECTOR block type
+ * Represents form input elements like dropdowns, radio buttons, and checkboxes
+ */
+export interface SelectorContentData {
+  /** Field label (optional) */
+  label?: string
+  /** Form field name (required) */
+  name: string
+  /** Type of selector (required) */
+  selectorType: 'dropdown' | 'radio' | 'checkbox' | 'toggle'
+  /** Array of selectable options (required, minimum 1 option) */
+  options: Array<{
+    /** Option value */
+    value: string
+    /** Display label */
+    label: string
+    /** Whether option is pre-selected */
+    selected?: boolean
+    /** Whether option is disabled */
+    disabled?: boolean
+  }>
+  /** Placeholder text for dropdown (optional) */
+  placeholder?: string
+}
+
+/**
+ * Content data interface for CARD_LIST block type
+ * Displays a grid/list of cards with images, descriptions, and CTAs
+ */
+export interface CardListContentData {
+  /** Section title (optional) */
+  title?: string
+  /** Array of card items (required, minimum 1 card) */
+  cards: Array<{
+    /** Unique card identifier */
+    id: string
+    /** Card image configuration */
+    image: {
+      /** Image URL */
+      url: string
+      /** Alt text for accessibility */
+      altText: string
+    }
+    /** Card title */
+    title: string
+    /** Card description (optional) */
+    description?: string
+    /** Call-to-action configuration */
+    cta: {
+      /** CTA button text */
+      text: string
+      /** Destination URL */
+      url: string
+      /** Button style */
+      style: 'primary' | 'secondary' | 'outline'
+    }
+  }>
+}
+
+/**
+ * Content data interface for CONTAINER block type
+ * Functions as a wrapper element that can contain other content blocks
+ */
+export interface ContainerContentData {
+  /** HTML semantic element type for the container */
+  containerType?: 'div' | 'section' | 'article' | 'aside' | 'header' | 'footer' | 'main' | 'nav'
+  /** Container title/label for identification in the visual builder */
+  title?: string
+  /** Container description for documentation purposes */
+  description?: string
+  /** Custom HTML attributes to be applied to the container element */
+  customAttributes?: Record<string, string>
+  /** CSS class names to be applied to the container */
+  customClasses?: string[] // Standardized naming (was cssClasses)
+  /** Container layout type for visual builder hints */
+  layoutType?: 'flex' | 'grid' | 'block' | 'inline-block'
+  /** Minimum height constraint for the container */
+  minHeight?: string
+  /** Maximum width constraint for the container */
+  maxWidth?: string
+  /** Whether the container should be collapsible in the editor */
+  isCollapsible?: boolean
+  /** Default collapsed state in the editor */
+  isCollapsed?: boolean
+  /** Accessibility role for the container */
+  ariaRole?: string
+  /** Accessibility label for the container */
+  ariaLabel?: string
+}
+
+// Union type for all content data types
+export type ContentData =
+  | TextContentData
+  | ImageContentData
+  | VideoContentData
+  | QuoteContentData
+  | HeroBannerContentData
+  | LogoListContentData
+  | ProductGridContentData
+  | NewsListContentData
+  | CustomHtmlContentData
+  | LinkContentData
+  | RichTextContentData
+  | CTAContentData
+  | SelectorContentData
+  | CardListContentData
+  | ContainerContentData
+  | Record<string, any> // For extensibility

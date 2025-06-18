@@ -4,7 +4,7 @@
     "title": "KeyShot Classic Customer Case Studies - Digital Experience Design",
     "metaOgTitle": "KeyShot Case Studies | Digital Experience Design | Vyin AI",
     "metaOgDescription": "Discover how KeyShot leverages AI-powered design tools to create incredible digital experiences.",
-    "metaOgImage": "https://picsum.photos/1200/630?random=15",
+    "metaOgImage": null,
     "metaKeywords": "keyshot, case studies, digital experience, AI design, customer success, vyin ai, design tools",
     "pageType": "CASE_STUDY",
     "status": "PUBLISHED",
@@ -16,1131 +16,1430 @@
     "updatedAt": 1750158665322,
     "contentBlocks": [
         {
-            "id": 9,
-            "selectorId": "case_study_url",
-            "blockType": "LINK",
+            "id": 49,
+            "selectorId": "case_study_main_page_container",
+            "blockType": "CONTAINER",
             "positionOrder": 1,
             "contentData": {
-                "rel": "noopener",
-                "url": "/",
-                "title": "Return to home",
-                "target": "_self",
-                "linkText": "← Back to home"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "0 0 20px 0",
-                    "display": "inline-block"
-                },
-                "effects": {
-                    "transition": "color 0.3s ease"
-                },
-                "typography": {
-                    "color": "#6c757d",
-                    "fontSize": "14px",
-                    "fontWeight": "500",
-                    "textDecoration": "none"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "analytics": {
-                        "trackClicks": true,
-                        "customEvents": [
-                            "breadcrumb_click"
-                        ]
-                    },
-                    "accessibility": {
-                        "tabIndex": 1,
-                        "ariaLabel": "Navigate back to case studies listing"
-                    }
-                },
-                "general": {
-                    "customId": "breadcrumb-link",
-                    "isVisible": true,
-                    "customClasses": [
-                        "breadcrumb",
-                        "navigation-link"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036245,
-            "updatedAt": 1750174036245
-        },
-        {
-            "id": 10,
-            "selectorId": "case_study_title_text",
-            "blockType": "RICH_TEXT",
-            "positionOrder": 2,
-            "contentData": {
-                "htmlContent": "<h1>Designing <span class=\"highlight\">incredible</span> digital experiences</h1>",
-                "highlightConfig": {
-                    "highlightColor": "#007bff",
-                    "highlightStyle": "background",
-                    "highlightedPhrases": [
-                        "incredible"
-                    ]
-                },
-                "plainTextFallback": "Designing incredible digital experiences"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "40px 0",
-                    "padding": "0 20px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "32px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#000",
-                    "fontSize": "48px",
-                    "textAlign": "center",
-                    "fontWeight": "700",
-                    "lineHeight": "1.2"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "allowedTags": [
-                        "h1",
-                        "h2",
-                        "h3",
-                        "span",
-                        "strong",
-                        "em"
-                    ],
-                    "contentLimits": {
-                        "maxLength": 200
-                    }
-                },
-                "general": {
-                    "customId": "main-title",
-                    "isVisible": true,
-                    "customClasses": [
-                        "hero-title",
-                        "rich-text"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036271,
-            "updatedAt": 1750174036271
-        },
-        {
-            "id": 11,
-            "selectorId": "case_study_case_logo",
-            "blockType": "IMAGE",
-            "positionOrder": 3,
-            "contentData": {
-                "title": "KeyShot Studios Logo",
-                "altText": "KeyShot Studios company logo",
-                "caption": "KeyShot Studios - Industry-leading 3D rendering and animation software",
-                "imageUrl": "https://picsum.photos/250/80?random=1",
-                "metadata": {
-                    "format": "PNG",
-                    "fileSize": "45KB",
-                    "colorSpace": "sRGB"
-                },
-                "dimensions": {
-                    "width": 250,
-                    "height": 80,
-                    "aspectRatio": "25:8"
-                },
-                "mediaFileId": 3001
-            },
-            "styleData": {
-                "layout": {
-                    "width": "250px",
-                    "height": "auto",
-                    "margin": "20px auto",
-                    "display": "block"
-                },
-                "effects": {
-                    "filter": "brightness(1.1)"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "lazyLoading": true,
-                    "optimization": "auto"
-                },
-                "general": {
-                    "customId": "company-logo",
-                    "isVisible": true,
-                    "customClasses": [
-                        "logo",
-                        "case-study-logo"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036286,
-            "updatedAt": 1750174036286
-        },
-        {
-            "id": 12,
-            "selectorId": "case_study_case_title",
-            "blockType": "TEXT",
-            "positionOrder": 4,
-            "contentData": {
-                "text": "KeyShot Classic Customer Case Studies",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "30px 0 20px 0",
-                    "padding": "0 20px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "28px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#2c3e50",
-                    "fontSize": "36px",
-                    "textAlign": "center",
-                    "fontWeight": "600",
-                    "lineHeight": "1.3"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "case-study-headline",
-                    "isVisible": true,
-                    "customClasses": [
-                        "headline",
-                        "case-title"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036300,
-            "updatedAt": 1750174036300
-        },
-        {
-            "id": 13,
-            "selectorId": "case_study_case_text",
-            "blockType": "TEXT",
-            "positionOrder": 5,
-            "contentData": {
-                "text": "Artificial Intelligence AI native to technology that empowers companies of all sizes to reach human intelligence, allowing them to problem solve such as learning, reasoning, decision-making and goal setting. Discover how KeyShot revolutionizes 3D rendering and animation workflows for design professionals worldwide.",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "0 auto 40px auto",
-                    "padding": "0 20px",
-                    "maxWidth": "800px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "16px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#495057",
-                    "fontSize": "18px",
-                    "textAlign": "center",
-                    "fontWeight": "400",
-                    "lineHeight": "1.6"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "case-study-description",
-                    "isVisible": true,
-                    "customClasses": [
-                        "description",
-                        "case-text"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036318,
-            "updatedAt": 1750174036318
-        },
-        {
-            "id": 14,
-            "selectorId": "case_study_case_id",
-            "blockType": "CTA",
-            "positionOrder": 6,
-            "contentData": {
-                "url": "/case-studies/keyshot-detailed",
-                "icon": {
-                    "name": "arrow-right",
-                    "position": "right"
-                },
-                "text": "Discover",
-                "ctaType": "button",
-                "description": "Explore the full KeyShot case study and implementation details"
-            },
-            "styleData": {
-                "border": {
-                    "radius": "6px"
-                },
-                "layout": {
-                    "margin": "20px 0",
-                    "display": "inline-block",
-                    "padding": "12px 24px"
-                },
-                "effects": {
-                    "cursor": "pointer",
-                    "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
-                    "transition": "all 0.3s ease"
-                },
-                "background": {
-                    "color": "#28a745",
-                    "gradient": "linear-gradient(135deg, #28a745 0%, #20c997 100%)"
-                },
-                "typography": {
-                    "color": "#ffffff",
-                    "fontSize": "16px",
-                    "fontWeight": "600",
-                    "textDecoration": "none"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "clickTracking": {
-                        "enabled": true,
-                        "eventName": "case_study_cta_click",
-                        "customData": {
-                            "page": "keyshot_case_study",
-                            "cta_type": "discover"
-                        }
-                    },
-                    "animationEffects": {
-                        "click": "transform: scale(0.98);",
-                        "hover": "transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15);"
-                    },
-                    "conversionAnalytics": {
-                        "value": 1,
-                        "goalId": "case_study_engagement"
-                    }
-                },
-                "general": {
-                    "customId": "main-cta",
-                    "isVisible": true,
-                    "customClasses": [
-                        "btn",
-                        "btn-primary",
-                        "cta-button"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036337,
-            "updatedAt": 1750174036337
-        },
-        {
-            "id": 15,
-            "selectorId": "case_study_summary",
-            "blockType": "TEXT",
-            "positionOrder": 7,
-            "contentData": {
-                "text": "Elevating ideas with bold teams. Supporting startups and established brands on their journey to create exceptional digital experiences through innovative design and cutting-edge technology solutions.",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "40px auto",
-                    "padding": "40px 20px",
-                    "maxWidth": "600px"
-                },
-                "background": {
-                    "color": "#1a1a1a"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "18px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#ffffff",
-                    "fontSize": "20px",
-                    "textAlign": "center",
-                    "fontWeight": "500",
-                    "lineHeight": "1.5"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "executive-summary",
-                    "isVisible": true,
-                    "customClasses": [
-                        "summary",
-                        "dark-section"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036356,
-            "updatedAt": 1750174036356
-        },
-        {
-            "id": 16,
-            "selectorId": "case_study_brand",
-            "blockType": "LOGO_LIST",
-            "positionOrder": 8,
-            "contentData": {
-                "logos": [
-                    {
-                        "id": "flux_logo",
-                        "name": "FLUX",
-                        "altText": "FLUX company logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=2",
-                        "websiteUrl": "https://flux.com",
-                        "mediaFileId": 2001,
-                        "openInNewTab": true
-                    },
-                    {
-                        "id": "keyshot_logo",
-                        "name": "KeyShot Studios",
-                        "altText": "KeyShot Studios logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=3",
-                        "websiteUrl": "https://keyshot.com",
-                        "mediaFileId": 2002,
-                        "openInNewTab": true
-                    },
-                    {
-                        "id": "rooftaters_logo",
-                        "name": "ROOFTATERS",
-                        "altText": "ROOFTATERS company logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=4",
-                        "websiteUrl": "https://rooftaters.com",
-                        "mediaFileId": 2003,
-                        "openInNewTab": true
-                    },
-                    {
-                        "id": "nebulae_logo",
-                        "name": "Nebulae",
-                        "altText": "Nebulae company logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=5",
-                        "websiteUrl": "https://nebulae.com",
-                        "mediaFileId": 2004,
-                        "openInNewTab": true
-                    },
-                    {
-                        "id": "stigmi_logo",
-                        "name": "Stigmi",
-                        "altText": "Stigmi company logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=6",
-                        "websiteUrl": "https://stigmi.com",
-                        "mediaFileId": 2005,
-                        "openInNewTab": true
-                    },
-                    {
-                        "id": "sellctin_logo",
-                        "name": "Sellctin",
-                        "altText": "Sellctin company logo",
-                        "imageUrl": "https://picsum.photos/150/60?random=7",
-                        "websiteUrl": "https://sellctin.com",
-                        "mediaFileId": 2006,
-                        "openInNewTab": true
-                    }
+                "title": "Main Page Container",
+                "ariaRole": "main",
+                "maxWidth": "1217px",
+                "ariaLabel": "Main page container for KeyShot case study",
+                "minHeight": "100vh",
+                "layoutType": "block",
+                "description": "Root container that wraps all page content blocks",
+                "isCollapsed": false,
+                "containerType": "main",
+                "customClasses": [
+                    "main-page-container",
+                    "case-study-page",
+                    "page-wrapper"
                 ],
-                "title": "Trusted by Industry Leaders",
-                "language": "EN",
-                "description": "Supporting startups and established brands on their journey"
+                "isCollapsible": false,
+                "customAttributes": {
+                    "id": "main-page-container",
+                    "role": "main",
+                    "data-section": "main-page"
+                }
             },
             "styleData": {
-                "grid": {
-                    "gridGap": "30px",
-                    "alignItems": "center",
-                    "justifyItems": "center",
-                    "gridTemplateColumns": "repeat(auto-fit, minmax(150px, 1fr))"
-                },
                 "layout": {
                     "width": "100%",
-                    "padding": "60px 0",
-                    "textAlign": "center"
+                    "display": "block",
+                    "position": "relative",
+                    "minHeight": "100vh"
                 },
-                "background": {
-                    "color": "#1a1a1a"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "responsive": {
-                        "mobile": {
-                            "columns": 2
-                        },
-                        "tablet": {
-                            "columns": 3
-                        },
-                        "desktop": {
-                            "columns": 6
-                        }
-                    },
-                    "displayMode": "grid",
-                    "lazyLoading": {
-                        "enabled": true,
-                        "threshold": 0.1
-                    }
-                },
-                "general": {
-                    "customId": "partner-brands",
-                    "isVisible": true,
-                    "customClasses": [
-                        "logo-grid",
-                        "brands-section"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036374,
-            "updatedAt": 1750174036374
-        },
-        {
-            "id": 17,
-            "selectorId": "case_study_hashtag",
-            "blockType": "SELECTOR",
-            "positionOrder": 9,
-            "contentData": {
-                "name": "case_study_filter",
-                "label": "Filter by Category",
-                "options": [
-                    {
-                        "label": "All Case Studies",
-                        "value": "all",
-                        "disabled": false,
-                        "selected": true
-                    },
-                    {
-                        "label": "Design & UX",
-                        "value": "design",
-                        "disabled": false,
-                        "selected": false
-                    },
-                    {
-                        "label": "Technology",
-                        "value": "technology",
-                        "disabled": false,
-                        "selected": false
-                    },
-                    {
-                        "label": "AI & Machine Learning",
-                        "value": "ai",
-                        "disabled": false,
-                        "selected": false
-                    },
-                    {
-                        "label": "Enterprise Solutions",
-                        "value": "enterprise",
-                        "disabled": false,
-                        "selected": false
-                    }
-                ],
-                "placeholder": "Select a category...",
-                "selectorType": "dropdown"
-            },
-            "styleData": {
-                "border": {
-                    "color": "#dee2e6",
-                    "style": "solid",
-                    "width": "1px",
-                    "radius": "4px"
-                },
-                "layout": {
-                    "width": "300px",
-                    "margin": "20px auto",
-                    "display": "block"
+                "spacing": {
+                    "margin": "0",
+                    "padding": "0"
                 },
                 "background": {
                     "color": "#ffffff"
-                },
-                "typography": {
-                    "color": "#495057",
-                    "fontSize": "14px"
                 }
             },
             "settingsData": {
                 "content": {
-                    "validation": {
-                        "required": false
+                    "editor": {
+                        "dropZone": {
+                            "maxChildren": 50,
+                            "allowedTypes": [
+                                "TEXT",
+                                "IMAGE",
+                                "LINK",
+                                "CTA",
+                                "RICH_TEXT",
+                                "LOGO_LIST",
+                                "SELECTOR",
+                                "CARD_LIST",
+                                "QUOTE",
+                                "CONTAINER"
+                            ],
+                            "showIndicators": true
+                        },
+                        "collapsible": false,
+                        "defaultCollapsed": false
                     },
-                    "formBehavior": {
-                        "submitOnChange": true,
-                        "resetAfterSubmit": false
+                    "responsive": {
+                        "hideOn": [],
+                        "mobile": {},
+                        "tablet": {},
+                        "desktop": {},
+                        "largeDesktop": {}
+                    },
+                    "constraints": {
+                        "maxWidth": "100%",
+                        "minWidth": null,
+                        "maxHeight": null,
+                        "minHeight": "100vh"
                     }
                 },
                 "general": {
-                    "customId": "category-filter",
+                    "customId": "main-page-container",
                     "isVisible": true,
                     "customClasses": [
-                        "form-select",
-                        "case-study-filter"
+                        "container",
+                        "page-wrapper",
+                        "main-container"
                     ]
                 }
             },
             "creatorUserId": 1,
             "updaterUserId": 1,
-            "createdAt": 1750174036390,
-            "updatedAt": 1750174036390
-        },
-        {
-            "id": 18,
-            "selectorId": "case_study_case_img",
-            "blockType": "CARD_LIST",
-            "positionOrder": 10,
-            "contentData": {
-                "cards": [
-                    {
-                        "id": "camping_lodge_case",
-                        "cta": {
-                            "url": "/case-studies/camping-lodge",
-                            "text": "Discover",
-                            "style": "primary"
-                        },
-                        "image": {
-                            "url": "https://picsum.photos/400/250?random=8",
-                            "altText": "Camping Lodge product design case study"
-                        },
-                        "price": null,
-                        "title": "Camping Lodge",
-                        "description": "Swiss outdoor company revolutionizing camping gear design with AI-powered prototyping and user experience optimization."
+            "createdAt": 1750215464714,
+            "updatedAt": 1750215464714,
+            "children": [
+                {
+                    "id": 50,
+                    "selectorId": "case_study_url",
+                    "blockType": "LINK",
+                    "positionOrder": 2,
+                    "contentData": {
+                        "rel": "noopener",
+                        "url": "/",
+                        "title": "Return to home page",
+                        "target": "_self",
+                        "linkText": "← Back to Home"
                     },
-                    {
-                        "id": "challenge_case",
-                        "cta": {
-                            "url": "/case-studies/the-challenge",
-                            "text": "Discover",
-                            "style": "primary"
+                    "styleData": {
+                        "layout": {
+                            "margin": "0 0 20px 0",
+                            "display": "inline-block"
                         },
-                        "image": {
-                            "url": "https://picsum.photos/400/250?random=9",
-                            "altText": "The Challenge communications consultancy case study"
+                        "effects": {
+                            "transition": "color 0.3s ease"
                         },
-                        "price": null,
-                        "title": "The Challenge",
-                        "description": "Communications consultancy for financial players creating consistent design systems for digital transformation."
-                    },
-                    {
-                        "id": "fintech_case",
-                        "cta": {
-                            "url": "/case-studies/fintech-innovation",
-                            "text": "Discover",
-                            "style": "primary"
-                        },
-                        "image": {
-                            "url": "https://picsum.photos/400/250?random=10",
-                            "altText": "FinTech startup case study"
-                        },
-                        "price": null,
-                        "title": "FinTech Innovation",
-                        "description": "Next-generation financial technology platform built with modern design principles and user-centric approach."
-                    }
-                ],
-                "title": "Related Case Studies"
-            },
-            "styleData": {
-                "grid": {
-                    "gridGap": "30px",
-                    "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))"
-                },
-                "layout": {
-                    "width": "100%",
-                    "padding": "60px 20px"
-                },
-                "background": {
-                    "color": "#f8f9fa"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "cardLimit": {
-                        "max": 6,
-                        "default": 3
-                    },
-                    "lazyLoading": {
-                        "enabled": true,
-                        "threshold": 0.2
-                    },
-                    "responsiveColumns": {
-                        "mobile": 1,
-                        "tablet": 2,
-                        "desktop": 3
-                    }
-                },
-                "general": {
-                    "customId": "related-cases",
-                    "isVisible": true,
-                    "customClasses": [
-                        "card-grid",
-                        "case-studies-grid"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036417,
-            "updatedAt": 1750174036417
-        },
-        {
-            "id": 19,
-            "selectorId": "case_study_quote",
-            "blockType": "QUOTE",
-            "positionOrder": 11,
-            "contentData": {
-                "quote": "Help customers achieve most effective, enhance business efficiency and create greater value.",
-                "author": "Sarah Johnson",
-                "company": "KeyShot Studios",
-                "position": "Design Director",
-                "authorImage": "https://picsum.photos/100/100?random=11"
-            },
-            "styleData": {
-                "layout": {
-                    "width": "100%",
-                    "padding": "80px 0",
-                    "textAlign": "center"
-                },
-                "background": {
-                    "color": "#1a1a1a"
-                },
-                "typography": {
-                    "color": "#ffffff",
-                    "fontSize": "24px",
-                    "fontWeight": "300",
-                    "lineHeight": "1.4"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "customer-quote",
-                    "isVisible": true,
-                    "customClasses": [
-                        "quote-section",
-                        "dark-bg"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036432,
-            "updatedAt": 1750174036432
-        },
-        {
-            "id": 20,
-            "selectorId": "case_study_banner_title",
-            "blockType": "TEXT",
-            "positionOrder": 12,
-            "contentData": {
-                "text": "Transform Your Design Workflow",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "0 0 20px 0",
-                    "padding": "0 20px"
-                },
-                "responsive": {
-                    "mobile": {
                         "typography": {
-                            "fontSize": "32px"
+                            "color": "#6c757d",
+                            "fontSize": "14px",
+                            "fontWeight": "500",
+                            "textDecoration": "none"
                         }
-                    }
-                },
-                "typography": {
-                    "color": "#ffffff",
-                    "fontSize": "42px",
-                    "textAlign": "center",
-                    "fontWeight": "700",
-                    "lineHeight": "1.2"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "banner-title",
-                    "isVisible": true,
-                    "customClasses": [
-                        "banner-heading",
-                        "hero-text"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036450,
-            "updatedAt": 1750174036450
-        },
-        {
-            "id": 21,
-            "selectorId": "case_study_banner_url",
-            "blockType": "LINK",
-            "positionOrder": 13,
-            "contentData": {
-                "rel": "noopener noreferrer",
-                "url": "https://keyshot.com/resources",
-                "title": "Access KeyShot design resources and documentation",
-                "target": "_blank",
-                "linkText": "Explore KeyShot Resources"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "20px 0",
-                    "display": "inline-block"
-                },
-                "effects": {
-                    "transition": "color 0.3s ease"
-                },
-                "typography": {
-                    "color": "#007bff",
-                    "fontSize": "16px",
-                    "fontWeight": "600",
-                    "textDecoration": "underline"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "analytics": {
-                        "trackClicks": true,
-                        "customEvents": [
-                            "external_resource_click",
-                            "keyshot_resources"
-                        ]
                     },
-                    "accessibility": {
-                        "tabIndex": 2,
-                        "ariaLabel": "Open KeyShot resources in new tab"
-                    }
-                },
-                "general": {
-                    "customId": "banner-resource-link",
-                    "isVisible": true,
-                    "customClasses": [
-                        "resource-link",
-                        "external-link"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036467,
-            "updatedAt": 1750174036467
-        },
-        {
-            "id": 22,
-            "selectorId": "case_study_banner_text",
-            "blockType": "TEXT",
-            "positionOrder": 14,
-            "contentData": {
-                "text": "Discover how leading design teams use KeyShot to create stunning visualizations and accelerate their product development cycles with AI-powered rendering technology.",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "0 auto 30px auto",
-                    "padding": "0 20px",
-                    "maxWidth": "700px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "16px"
+                    "settingsData": {
+                        "content": {
+                            "analytics": {
+                                "trackClicks": true,
+                                "customEvents": [
+                                    "breadcrumb_click"
+                                ]
+                            },
+                            "accessibility": {
+                                "tabIndex": 1,
+                                "ariaLabel": "Navigate back to case studies listing"
+                            }
+                        },
+                        "general": {
+                            "customId": "breadcrumb-link",
+                            "isVisible": true,
+                            "customClasses": [
+                                "breadcrumb",
+                                "navigation-link"
+                            ]
                         }
-                    }
-                },
-                "typography": {
-                    "color": "#ffffff",
-                    "fontSize": "18px",
-                    "textAlign": "center",
-                    "fontWeight": "400",
-                    "lineHeight": "1.6"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "banner-description",
-                    "isVisible": true,
-                    "customClasses": [
-                        "banner-text",
-                        "description"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036484,
-            "updatedAt": 1750174036484
-        },
-        {
-            "id": 23,
-            "selectorId": "case_study_banner_img",
-            "blockType": "IMAGE",
-            "positionOrder": 15,
-            "contentData": {
-                "title": "KeyShot Banner Image",
-                "altText": "KeyShot 3D rendering interface showcasing product design workflow",
-                "caption": "KeyShot professional 3D rendering and animation software interface",
-                "imageUrl": "https://picsum.photos/800/450?random=12",
-                "metadata": {
-                    "format": "JPEG",
-                    "fileSize": "180KB",
-                    "colorSpace": "sRGB"
-                },
-                "dimensions": {
-                    "width": 800,
-                    "height": 450,
-                    "aspectRatio": "16:9"
-                },
-                "mediaFileId": 3015
-            },
-            "styleData": {
-                "layout": {
-                    "width": "100%",
-                    "height": "auto",
-                    "margin": "0 auto",
-                    "display": "block",
-                    "maxWidth": "800px"
-                },
-                "effects": {
-                    "boxShadow": "0 8px 32px rgba(0,0,0,0.3)",
-                    "borderRadius": "8px"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "lazyLoading": true,
-                    "optimization": "auto"
-                },
-                "general": {
-                    "customId": "banner-foreground",
-                    "isVisible": true,
-                    "customClasses": [
-                        "banner-image",
-                        "hero-visual"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036497,
-            "updatedAt": 1750174036497
-        },
-        {
-            "id": 24,
-            "selectorId": "case_study_banner_bg_pc",
-            "blockType": "IMAGE",
-            "positionOrder": 16,
-            "contentData": {
-                "title": "Desktop Background",
-                "altText": "Abstract geometric background pattern for desktop display",
-                "caption": "Desktop background with modern geometric design elements",
-                "imageUrl": "https://picsum.photos/1920/1080?random=13",
-                "metadata": {
-                    "format": "JPEG",
-                    "fileSize": "320KB",
-                    "colorSpace": "sRGB"
-                },
-                "dimensions": {
-                    "width": 1920,
-                    "height": 1080,
-                    "aspectRatio": "16:9"
-                },
-                "mediaFileId": 3016
-            },
-            "styleData": {
-                "layout": {
-                    "top": "0",
-                    "left": "0",
-                    "width": "100%",
-                    "height": "100%",
-                    "zIndex": "-1",
-                    "position": "absolute"
-                },
-                "effects": {
-                    "objectFit": "cover"
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "lazyLoading": false,
-                    "optimization": "auto"
-                },
-                "general": {
-                    "customId": "desktop-background",
-                    "isVisible": true,
-                    "customClasses": [
-                        "bg-image",
-                        "desktop-only"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036509,
-            "updatedAt": 1750174036509
-        },
-        {
-            "id": 25,
-            "selectorId": "case_study_subtitle",
-            "blockType": "TEXT",
-            "positionOrder": 17,
-            "contentData": {
-                "text": "Innovation Through Design",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "60px 0 20px 0",
-                    "padding": "0 20px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "24px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#2c3e50",
-                    "fontSize": "28px",
-                    "textAlign": "center",
-                    "fontWeight": "600",
-                    "lineHeight": "1.3"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "section-subtitle",
-                    "isVisible": true,
-                    "customClasses": [
-                        "subtitle",
-                        "section-heading"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036539,
-            "updatedAt": 1750174036539
-        },
-        {
-            "id": 26,
-            "selectorId": "case_study_subtext",
-            "blockType": "TEXT",
-            "positionOrder": 18,
-            "contentData": {
-                "text": "Explore how KeyShot empowers design teams to create photorealistic renderings and animations that bring products to life before they are manufactured. From concept to market, KeyShot accelerates the design process with intuitive tools and powerful AI-driven features.",
-                "language": "EN"
-            },
-            "styleData": {
-                "layout": {
-                    "margin": "0 auto 40px auto",
-                    "padding": "0 20px",
-                    "maxWidth": "700px"
-                },
-                "responsive": {
-                    "mobile": {
-                        "typography": {
-                            "fontSize": "15px"
-                        }
-                    }
-                },
-                "typography": {
-                    "color": "#6c757d",
-                    "fontSize": "16px",
-                    "textAlign": "center",
-                    "fontWeight": "400",
-                    "lineHeight": "1.6"
-                }
-            },
-            "settingsData": {
-                "general": {
-                    "customId": "section-description",
-                    "isVisible": true,
-                    "customClasses": [
-                        "subtext",
-                        "section-description"
-                    ]
-                }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036559,
-            "updatedAt": 1750174036559
-        },
-        {
-            "id": 27,
-            "selectorId": "case_study_banner_bg_mb",
-            "blockType": "IMAGE",
-            "positionOrder": 19,
-            "contentData": {
-                "title": "Mobile Background",
-                "altText": "Mobile-optimized abstract background pattern",
-                "caption": "Mobile background with responsive design elements",
-                "imageUrl": "https://picsum.photos/768/1024?random=14",
-                "metadata": {
-                    "format": "JPEG",
-                    "fileSize": "150KB",
-                    "colorSpace": "sRGB"
-                },
-                "dimensions": {
-                    "width": 768,
-                    "height": 1024,
-                    "aspectRatio": "3:4"
-                },
-                "mediaFileId": 3019
-            },
-            "styleData": {
-                "layout": {
-                    "top": "0",
-                    "left": "0",
-                    "width": "100%",
-                    "height": "100%",
-                    "zIndex": "-1",
-                    "position": "absolute"
-                },
-                "effects": {
-                    "objectFit": "cover"
-                },
-                "responsive": {
-                    "mobile": {
-                        "display": "block"
                     },
-                    "desktop": {
-                        "display": "none"
-                    }
-                }
-            },
-            "settingsData": {
-                "content": {
-                    "lazyLoading": false,
-                    "optimization": "auto"
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464767,
+                    "updatedAt": 1750215464767,
+                    "parentBlockId": 49
                 },
-                "general": {
-                    "customId": "mobile-background",
-                    "isVisible": true,
-                    "customClasses": [
-                        "bg-image",
-                        "mobile-only"
+                {
+                    "id": 51,
+                    "selectorId": "case_study_title_text",
+                    "blockType": "RICH_TEXT",
+                    "positionOrder": 3,
+                    "contentData": {
+                        "htmlContent": "<h1>Designing <span class=\"highlight\">incredible</span> digital experiences</h1>",
+                        "highlightConfig": {
+                            "highlightColor": "#007bff",
+                            "highlightStyle": "background",
+                            "highlightedPhrases": [
+                                "incredible"
+                            ]
+                        },
+                        "plainTextFallback": "Designing incredible digital experiences"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "40px 0",
+                            "padding": "0 20px"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "32px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#000000",
+                            "fontSize": "48px",
+                            "textAlign": "center",
+                            "fontWeight": "700",
+                            "lineHeight": "1.2"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "allowedTags": [
+                                "h1",
+                                "h2",
+                                "h3",
+                                "span",
+                                "strong",
+                                "em"
+                            ],
+                            "contentLimits": {
+                                "maxLength": 200
+                            }
+                        },
+                        "general": {
+                            "customId": "main-title",
+                            "isVisible": true,
+                            "customClasses": [
+                                "hero-title",
+                                "rich-text"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464785,
+                    "updatedAt": 1750215464785,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 52,
+                    "selectorId": "case_study_case_logo",
+                    "blockType": "IMAGE",
+                    "positionOrder": 4,
+                    "contentData": {
+                        "title": "KeyShot Studios Logo",
+                        "altText": "KeyShot Studios company logo",
+                        "caption": "KeyShot Studios - Industry-leading 3D rendering and animation software",
+                        "imageUrl": "https://picsum.photos/250/80",
+                        "metadata": {
+                            "format": "PNG",
+                            "fileSize": "45KB",
+                            "colorSpace": "sRGB"
+                        },
+                        "dimensions": {
+                            "width": 250,
+                            "height": 80,
+                            "aspectRatio": "25:8"
+                        },
+                        "mediaFileId": 3001
+                    },
+                    "styleData": {
+                        "layout": {
+                            "width": "250px",
+                            "height": "auto",
+                            "margin": "20px auto",
+                            "display": "block"
+                        },
+                        "effects": {
+                            "filter": "brightness(1.1)"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "lazyLoading": {
+                                "enabled": true,
+                                "threshold": 0.1
+                            },
+                            "optimization": "auto"
+                        },
+                        "general": {
+                            "customId": "company-logo",
+                            "isVisible": true,
+                            "customClasses": [
+                                "logo",
+                                "case-study-logo"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464802,
+                    "updatedAt": 1750215464802,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 53,
+                    "selectorId": "case_study_case_title",
+                    "blockType": "TEXT",
+                    "positionOrder": 5,
+                    "contentData": {
+                        "text": "KeyShot Classic Customer Case Studies",
+                        "language": "EN"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "30px 0 20px 0",
+                            "padding": "0 20px"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "28px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#2c3e50",
+                            "fontSize": "36px",
+                            "textAlign": "center",
+                            "fontWeight": "600",
+                            "lineHeight": "1.3"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "case-study-headline",
+                            "isVisible": true,
+                            "customClasses": [
+                                "headline",
+                                "case-title"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464826,
+                    "updatedAt": 1750215464826,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 54,
+                    "selectorId": "case_study_case_text",
+                    "blockType": "TEXT",
+                    "positionOrder": 6,
+                    "contentData": {
+                        "text": "Artificial Intelligence AI native to technology that empowers companies of all sizes to reach human intelligence, allowing them to problem solve such as learning, reasoning, decision-making and goal setting. Discover how KeyShot revolutionizes 3D rendering and animation workflows for design professionals worldwide.",
+                        "language": "EN"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "0 auto 40px auto",
+                            "padding": "0 20px",
+                            "maxWidth": "800px"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "16px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#495057",
+                            "fontSize": "18px",
+                            "textAlign": "center",
+                            "fontWeight": "400",
+                            "lineHeight": "1.6"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "case-study-description",
+                            "isVisible": true,
+                            "customClasses": [
+                                "description",
+                                "case-text"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464873,
+                    "updatedAt": 1750215464873,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 55,
+                    "selectorId": "case_study_case_cta_container",
+                    "blockType": "CONTAINER",
+                    "positionOrder": 7,
+                    "contentData": {
+                        "title": "Discover CTA Container",
+                        "ariaRole": "region",
+                        "maxWidth": "100%",
+                        "ariaLabel": "Discover more about KeyShot case study",
+                        "minHeight": "auto",
+                        "layoutType": "flex",
+                        "description": "Container for the Discover CTA button",
+                        "isCollapsed": false,
+                        "containerType": "div",
+                        "customClasses": [
+                            "discover-cta-container",
+                            "cta-section"
+                        ],
+                        "isCollapsible": false,
+                        "customAttributes": {
+                            "id": "discover-cta-container",
+                            "role": "region",
+                            "data-section": "discover-cta"
+                        }
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "40px 0",
+                            "display": "flex"
+                        },
+                        "flex": {
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "alignItems": "center"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "discover-cta-container",
+                            "isVisible": true,
+                            "customClasses": [
+                                "cta-container",
+                                "discover-section"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464890,
+                    "updatedAt": 1750215464890,
+                    "parentBlockId": 49,
+                    "children": [
+                        {
+                            "id": 100,
+                            "selectorId": "case_study_case_id",
+                            "blockType": "CTA",
+                            "positionOrder": 7,
+                            "contentData": {
+                                "url": "/case-studies/keyshot-detailed",
+                                "icon": {
+                                    "name": "arrow-right",
+                                    "position": "right"
+                                },
+                                "text": "Discover",
+                                "ctaType": "button",
+                                "description": "Explore the full KeyShot case study and implementation details"
+                            },
+                            "styleData": {
+                                "border": {
+                                    "radius": "6px"
+                                },
+                                "layout": {
+                                    "margin": "20px 0",
+                                    "display": "inline-block",
+                                    "padding": "12px 24px"
+                                },
+                                "effects": {
+                                    "cursor": "pointer",
+                                    "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
+                                    "transition": "all 0.3s ease"
+                                },
+                                "background": {
+                                    "color": "#28a745",
+                                    "gradient": "linear-gradient(135deg, #28a745 0%, #20c997 100%)"
+                                },
+                                "typography": {
+                                    "color": "#ffffff",
+                                    "fontSize": "16px",
+                                    "fontWeight": "600",
+                                    "textDecoration": "none"
+                                }
+                            },
+                            "settingsData": {
+                                "content": {
+                                    "analytics": {
+                                        "eventName": "case_study_cta_click",
+                                        "customData": {
+                                            "page": "keyshot_case_study",
+                                            "cta_type": "discover"
+                                        },
+                                        "trackViews": false,
+                                        "trackClicks": true,
+                                        "trackHovers": false,
+                                        "customEvents": [
+                                            "case_study_cta_click"
+                                        ]
+                                    },
+                                    "animationEffects": {
+                                        "click": "transform: scale(0.98);",
+                                        "hover": "transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15);"
+                                    },
+                                    "conversionAnalytics": {
+                                        "value": 1,
+                                        "goalId": "case_study_engagement"
+                                    }
+                                },
+                                "general": {
+                                    "customId": "main-cta",
+                                    "isVisible": true,
+                                    "customClasses": [
+                                        "btn",
+                                        "btn-primary",
+                                        "cta-button"
+                                    ]
+                                }
+                            },
+                            "creatorUserId": 1,
+                            "updaterUserId": 1,
+                            "createdAt": 1750215464894,
+                            "updatedAt": 1750215464894,
+                            "parentBlockId": 55
+                        }
                     ]
+                },
+                {
+                    "id": 56,
+                    "selectorId": "case_study_summary",
+                    "blockType": "TEXT",
+                    "positionOrder": 8,
+                    "contentData": {
+                        "text": "Elevating ideas with bold teams. Supporting startups and established brands on their journey to create exceptional digital experiences through innovative design and cutting-edge technology solutions.",
+                        "language": "EN"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "40px auto",
+                            "padding": "40px 20px",
+                            "maxWidth": "600px"
+                        },
+                        "background": {
+                            "color": "#1a1a1a"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "18px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#ffffff",
+                            "fontSize": "20px",
+                            "textAlign": "center",
+                            "fontWeight": "500",
+                            "lineHeight": "1.5"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "executive-summary",
+                            "isVisible": true,
+                            "customClasses": [
+                                "summary",
+                                "dark-section"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464912,
+                    "updatedAt": 1750215464912,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 57,
+                    "selectorId": "case_study_brand",
+                    "blockType": "LOGO_LIST",
+                    "positionOrder": 9,
+                    "contentData": {
+                        "logos": [
+                            {
+                                "id": "flux_logo",
+                                "name": "FLUX",
+                                "altText": "FLUX company logo",
+                                "imageUrl": "https://picsum.photos/150/60",
+                                "websiteUrl": "https://flux.com",
+                                "mediaFileId": 2001,
+                                "openInNewTab": true
+                            },
+                            {
+                                "id": "keyshot_logo",
+                                "name": "KeyShot Studios",
+                                "altText": "KeyShot Studios logo",
+                                "imageUrl": "https://picsum.photos/160/65",
+                                "websiteUrl": "https://keyshot.com",
+                                "mediaFileId": 2002,
+                                "openInNewTab": true
+                            },
+                            {
+                                "id": "rooftaters_logo",
+                                "name": "ROOFTATERS",
+                                "altText": "ROOFTATERS company logo",
+                                "imageUrl": "https://picsum.photos/155/62",
+                                "websiteUrl": "https://rooftaters.com",
+                                "mediaFileId": 2003,
+                                "openInNewTab": true
+                            },
+                            {
+                                "id": "nebulae_logo",
+                                "name": "Nebulae",
+                                "altText": "Nebulae company logo",
+                                "imageUrl": "https://picsum.photos/145/58",
+                                "websiteUrl": "https://nebulae.com",
+                                "mediaFileId": 2004,
+                                "openInNewTab": true
+                            },
+                            {
+                                "id": "stigmi_logo",
+                                "name": "Stigmi",
+                                "altText": "Stigmi company logo",
+                                "imageUrl": "https://picsum.photos/140/56",
+                                "websiteUrl": "https://stigmi.com",
+                                "mediaFileId": 2005,
+                                "openInNewTab": true
+                            },
+                            {
+                                "id": "sellctin_logo",
+                                "name": "Sellctin",
+                                "altText": "Sellctin company logo",
+                                "imageUrl": "https://picsum.photos/165/66",
+                                "websiteUrl": "https://sellctin.com",
+                                "mediaFileId": 2006,
+                                "openInNewTab": true
+                            }
+                        ],
+                        "title": "Trusted by Industry Leaders",
+                        "language": "EN",
+                        "description": "Supporting startups and established brands on their journey"
+                    },
+                    "styleData": {
+                        "grid": {
+                            "gridGap": "30px",
+                            "alignItems": "center",
+                            "justifyItems": "center",
+                            "gridTemplateColumns": "repeat(auto-fit, minmax(150px, 1fr))"
+                        },
+                        "layout": {
+                            "width": "100%",
+                            "padding": "60px 0",
+                            "textAlign": "center"
+                        },
+                        "background": {
+                            "color": "#1a1a1a"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "responsive": {
+                                "mobile": {
+                                    "columns": 2
+                                },
+                                "tablet": {
+                                    "columns": 3
+                                },
+                                "desktop": {
+                                    "columns": 6
+                                }
+                            },
+                            "displayMode": "grid",
+                            "lazyLoading": {
+                                "enabled": true,
+                                "threshold": 0.1
+                            }
+                        },
+                        "general": {
+                            "customId": "partner-brands",
+                            "isVisible": true,
+                            "customClasses": [
+                                "logo-grid",
+                                "brands-section"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464935,
+                    "updatedAt": 1750215464935,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 58,
+                    "selectorId": "case_study_hashtag",
+                    "blockType": "SELECTOR",
+                    "positionOrder": 10,
+                    "contentData": {
+                        "name": "case_study_filter",
+                        "label": "Filter by Category",
+                        "options": [
+                            {
+                                "label": "All Case Studies",
+                                "value": "all",
+                                "disabled": false,
+                                "selected": true
+                            },
+                            {
+                                "label": "Design & UX",
+                                "value": "design",
+                                "disabled": false,
+                                "selected": false
+                            },
+                            {
+                                "label": "Technology",
+                                "value": "technology",
+                                "disabled": false,
+                                "selected": false
+                            },
+                            {
+                                "label": "AI & Machine Learning",
+                                "value": "ai",
+                                "disabled": false,
+                                "selected": false
+                            },
+                            {
+                                "label": "Enterprise Solutions",
+                                "value": "enterprise",
+                                "disabled": false,
+                                "selected": false
+                            }
+                        ],
+                        "placeholder": "Select a category...",
+                        "selectorType": "dropdown"
+                    },
+                    "styleData": {
+                        "border": {
+                            "color": "#dee2e6",
+                            "style": "solid",
+                            "width": "1px",
+                            "radius": "4px"
+                        },
+                        "layout": {
+                            "width": "300px",
+                            "margin": "20px auto",
+                            "display": "block"
+                        },
+                        "background": {
+                            "color": "#ffffff"
+                        },
+                        "typography": {
+                            "color": "#495057",
+                            "fontSize": "14px"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "validation": {
+                                "pattern": null,
+                                "required": false,
+                                "maxLength": null,
+                                "minLength": null,
+                                "customValidation": null
+                            },
+                            "formBehavior": {
+                                "submitOnChange": true,
+                                "resetAfterSubmit": false
+                            }
+                        },
+                        "general": {
+                            "customId": "category-filter",
+                            "isVisible": true,
+                            "customClasses": [
+                                "form-select",
+                                "case-study-filter"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464962,
+                    "updatedAt": 1750215464962,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 59,
+                    "selectorId": "case_study_case_img",
+                    "blockType": "CARD_LIST",
+                    "positionOrder": 11,
+                    "contentData": {
+                        "cards": [
+                            {
+                                "id": "camping_lodge_case",
+                                "cta": {
+                                    "url": "/case-studies/camping-lodge",
+                                    "text": "Discover",
+                                    "style": "primary"
+                                },
+                                "image": {
+                                    "url": "https://picsum.photos/400/250",
+                                    "altText": "Camping Lodge product design case study"
+                                },
+                                "price": null,
+                                "title": "Camping Lodge",
+                                "description": "Swiss outdoor company revolutionizing camping gear design with AI-powered prototyping and user experience optimization."
+                            },
+                            {
+                                "id": "challenge_case",
+                                "cta": {
+                                    "url": "/case-studies/the-challenge",
+                                    "text": "Discover",
+                                    "style": "primary"
+                                },
+                                "image": {
+                                    "url": "https://picsum.photos/400/260",
+                                    "altText": "The Challenge communications consultancy case study"
+                                },
+                                "price": null,
+                                "title": "The Challenge",
+                                "description": "Communications consultancy for financial players creating consistent design systems for digital transformation."
+                            },
+                            {
+                                "id": "fintech_case",
+                                "cta": {
+                                    "url": "/case-studies/fintech-innovation",
+                                    "text": "Discover",
+                                    "style": "primary"
+                                },
+                                "image": {
+                                    "url": "https://picsum.photos/400/270",
+                                    "altText": "FinTech startup case study"
+                                },
+                                "price": null,
+                                "title": "FinTech Innovation",
+                                "description": "Next-generation financial technology platform built with modern design principles and user-centric approach."
+                            }
+                        ],
+                        "title": "Related Case Studies"
+                    },
+                    "styleData": {
+                        "grid": {
+                            "gridGap": "30px",
+                            "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))"
+                        },
+                        "layout": {
+                            "width": "100%",
+                            "padding": "60px 20px"
+                        },
+                        "background": {
+                            "color": "#f8f9fa"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "cardLimit": {
+                                "max": 6,
+                                "default": 3
+                            },
+                            "lazyLoading": {
+                                "enabled": true,
+                                "threshold": 0.2
+                            },
+                            "responsiveColumns": {
+                                "mobile": 1,
+                                "tablet": 2,
+                                "desktop": 3
+                            }
+                        },
+                        "general": {
+                            "customId": "related-cases",
+                            "isVisible": true,
+                            "customClasses": [
+                                "card-grid",
+                                "case-studies-grid"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215464994,
+                    "updatedAt": 1750215464994,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 60,
+                    "selectorId": "case_study_quote",
+                    "blockType": "QUOTE",
+                    "positionOrder": 12,
+                    "contentData": {
+                        "quote": "Help customers achieve most effective, enhance business efficiency and create greater value.",
+                        "author": "Sarah Johnson",
+                        "company": "KeyShot Studios",
+                        "position": "Design Director",
+                        "authorImage": "https://picsum.photos/80/80"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "width": "100%",
+                            "padding": "80px 0",
+                            "textAlign": "center"
+                        },
+                        "background": {
+                            "color": "#1a1a1a"
+                        },
+                        "typography": {
+                            "color": "#ffffff",
+                            "fontSize": "24px",
+                            "fontWeight": "300",
+                            "lineHeight": "1.4"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "customer-quote",
+                            "isVisible": true,
+                            "customClasses": [
+                                "quote-section",
+                                "dark-bg"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465020,
+                    "updatedAt": 1750215465020,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 61,
+                    "selectorId": "case_study_banner_container",
+                    "blockType": "CONTAINER",
+                    "positionOrder": 13,
+                    "contentData": {
+                        "title": "Hero Banner Section",
+                        "ariaRole": "banner",
+                        "maxWidth": "100%",
+                        "ariaLabel": "Hero banner section with KeyShot case study information",
+                        "minHeight": "600px",
+                        "layoutType": "flex",
+                        "description": "Main banner container with title, description, link and image",
+                        "isCollapsed": false,
+                        "containerType": "section",
+                        "customClasses": [
+                            "hero-banner",
+                            "banner-section",
+                            "main-banner"
+                        ],
+                        "isCollapsible": true,
+                        "customAttributes": {
+                            "id": "hero-section",
+                            "role": "banner",
+                            "data-section": "hero-banner"
+                        }
+                    },
+                    "styleData": {
+                        "layout": {
+                            "width": "100%",
+                            "display": "grid",
+                            "padding": "60px 40px",
+                            "position": "relative",
+                            "minHeight": "400px",
+                            "alignItems": "center",
+                            "gridTemplateColumns": "1fr 1fr",
+                            "gap": "40px"
+                        },
+                        "effects": {
+                            "overflow": "hidden"
+                        },
+                        "spacing": {
+                            "margin": "0",
+                            "padding": "80px 20px"
+                        },
+                        "background": {
+                            "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                            "image": "https://picsum.photos/1920/1080"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "layout": {
+                                    "padding": "60px 15px"
+                                },
+                                "spacing": {
+                                    "padding": "60px 15px"
+                                }
+                            }
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "editor": {
+                                "dropZone": {
+                                    "maxChildren": 6,
+                                    "allowedTypes": [
+                                        "TEXT",
+                                        "LINK",
+                                        "IMAGE",
+                                        "CTA"
+                                    ],
+                                    "showIndicators": true
+                                },
+                                "collapsible": true,
+                                "defaultCollapsed": false
+                            },
+                            "responsive": {
+                                "hideOn": [],
+                                "mobile": {},
+                                "tablet": {},
+                                "desktop": {},
+                                "largeDesktop": {}
+                            },
+                            "constraints": {
+                                "maxWidth": "100%",
+                                "minWidth": null,
+                                "maxHeight": null,
+                                "minHeight": "600px"
+                            }
+                        },
+                        "general": {
+                            "customId": "hero-banner-container",
+                            "isVisible": true,
+                            "customClasses": [
+                                "container",
+                                "hero-section",
+                                "banner-wrapper"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465049,
+                    "updatedAt": 1750215465049,
+                    "parentBlockId": 49,
+                    "children": [
+                        {
+                            "id": 63,
+                            "selectorId": "case_study_banner_url",
+                            "blockType": "LINK",
+                            "positionOrder": 14,
+                            "contentData": {
+                                "rel": "noopener noreferrer",
+                                "url": "https://keyshot.com/resources",
+                                "title": "Access KeyShot design resources and documentation",
+                                "target": "_blank",
+                                "linkText": "Explore KeyShot Resources"
+                            },
+                            "styleData": {
+                                "layout": {
+                                    "margin": "20px auto",
+                                    "display": "block",
+                                    "textAlign": "center"
+                                },
+                                "effects": {
+                                    "transition": "color 0.3s ease"
+                                },
+                                "typography": {
+                                    "color": "#007bff",
+                                    "fontSize": "16px",
+                                    "fontWeight": "600",
+                                    "textDecoration": "underline"
+                                }
+                            },
+                            "settingsData": {
+                                "content": {
+                                    "analytics": {
+                                        "trackClicks": true,
+                                        "customEvents": [
+                                            "external_resource_click",
+                                            "keyshot_resources"
+                                        ]
+                                    },
+                                    "accessibility": {
+                                        "tabIndex": 2,
+                                        "ariaLabel": "Open KeyShot resources in new tab"
+                                    }
+                                },
+                                "general": {
+                                    "customId": "banner-resource-link",
+                                    "isVisible": true,
+                                    "customClasses": [
+                                        "resource-link",
+                                        "external-link"
+                                    ]
+                                }
+                            },
+                            "creatorUserId": 1,
+                            "updaterUserId": 1,
+                            "createdAt": 1750215465115,
+                            "updatedAt": 1750215465115,
+                            "parentBlockId": 61
+                        },
+                        {
+                            "id": 62,
+                            "selectorId": "case_study_banner_title",
+                            "blockType": "TEXT",
+                            "positionOrder": 15,
+                            "contentData": {
+                                "text": "Transform Your Design Workflow",
+                                "language": "EN"
+                            },
+                            "styleData": {
+                                "layout": {
+                                    "margin": "0 0 20px 0",
+                                    "padding": "0 20px"
+                                },
+                                "responsive": {
+                                    "mobile": {
+                                        "typography": {
+                                            "fontSize": "32px"
+                                        }
+                                    }
+                                },
+                                "typography": {
+                                    "color": "#000000",
+                                    "fontSize": "42px",
+                                    "textAlign": "center",
+                                    "fontWeight": "700",
+                                    "lineHeight": "1.2"
+                                }
+                            },
+                            "settingsData": {
+                                "general": {
+                                    "customId": "banner-title",
+                                    "isVisible": true,
+                                    "customClasses": [
+                                        "banner-heading",
+                                        "hero-text"
+                                    ]
+                                }
+                            },
+                            "creatorUserId": 1,
+                            "updaterUserId": 1,
+                            "createdAt": 1750215465096,
+                            "updatedAt": 1750215465096,
+                            "parentBlockId": 61
+                        },
+                        {
+                            "id": 64,
+                            "selectorId": "case_study_banner_text",
+                            "blockType": "TEXT",
+                            "positionOrder": 15,
+                            "contentData": {
+                                "text": "Discover how leading design teams use KeyShot to create stunning visualizations and accelerate their product development cycles with AI-powered rendering technology.",
+                                "language": "EN"
+                            },
+                            "styleData": {
+                                "layout": {
+                                    "margin": "0 auto 30px auto",
+                                    "padding": "0 20px",
+                                    "maxWidth": "700px"
+                                },
+                                "responsive": {
+                                    "mobile": {
+                                        "typography": {
+                                            "fontSize": "16px"
+                                        }
+                                    }
+                                },
+                                "typography": {
+                                    "color": "#000000",
+                                    "fontSize": "18px",
+                                    "textAlign": "center",
+                                    "fontWeight": "400",
+                                    "lineHeight": "1.6"
+                                }
+                            },
+                            "settingsData": {
+                                "general": {
+                                    "customId": "banner-description",
+                                    "isVisible": true,
+                                    "customClasses": [
+                                        "banner-text",
+                                        "description"
+                                    ]
+                                }
+                            },
+                            "creatorUserId": 1,
+                            "updaterUserId": 1,
+                            "createdAt": 1750215465139,
+                            "updatedAt": 1750215465139,
+                            "parentBlockId": 61
+                        },
+                        {
+                            "id": 65,
+                            "selectorId": "case_study_banner_img",
+                            "blockType": "IMAGE",
+                            "positionOrder": 16,
+                            "contentData": {
+                                "title": "KeyShot Banner Image",
+                                "altText": "KeyShot 3D rendering interface showcasing product design workflow",
+                                "caption": "KeyShot professional 3D rendering and animation software interface",
+                                "imageUrl": "https://picsum.photos/800/450",
+                                "metadata": {
+                                    "format": "JPEG",
+                                    "fileSize": "180KB",
+                                    "colorSpace": "sRGB"
+                                },
+                                "dimensions": {
+                                    "width": 800,
+                                    "height": 450,
+                                    "aspectRatio": "16:9"
+                                },
+                                "mediaFileId": 3015
+                            },
+                            "styleData": {
+                                "layout": {
+                                    "width": "100%",
+                                    "height": "auto",
+                                    "margin": "0 auto",
+                                    "display": "block",
+                                    "maxWidth": "800px"
+                                },
+                                "effects": {
+                                    "boxShadow": "0 8px 32px rgba(0,0,0,0.3)",
+                                    "borderRadius": "8px"
+                                }
+                            },
+                            "settingsData": {
+                                "content": {
+                                    "lazyLoading": {
+                                        "enabled": true,
+                                        "threshold": 0.1
+                                    },
+                                    "optimization": "auto"
+                                },
+                                "general": {
+                                    "customId": "banner-foreground",
+                                    "isVisible": true,
+                                    "customClasses": [
+                                        "banner-image",
+                                        "hero-visual"
+                                    ]
+                                }
+                            },
+                            "creatorUserId": 1,
+                            "updaterUserId": 1,
+                            "createdAt": 1750215465170,
+                            "updatedAt": 1750215465170,
+                            "parentBlockId": 61
+                        }
+                    ]
+                },
+                {
+                    "id": 66,
+                    "selectorId": "case_study_banner_bg_pc",
+                    "blockType": "IMAGE",
+                    "positionOrder": 17,
+                    "contentData": {
+                        "title": "Desktop Background",
+                        "altText": "Abstract geometric background pattern for desktop display",
+                        "caption": "Desktop background with modern geometric design elements",
+                        "imageUrl": "https://picsum.photos/1920/1080",
+                        "metadata": {
+                            "format": "JPEG",
+                            "fileSize": "320KB",
+                            "colorSpace": "sRGB"
+                        },
+                        "dimensions": {
+                            "width": 1920,
+                            "height": 1080,
+                            "aspectRatio": "16:9"
+                        },
+                        "mediaFileId": 3016
+                    },
+                    "styleData": {
+                        "layout": {
+                            "top": "0",
+                            "left": "0",
+                            "width": "100%",
+                            "height": "100%",
+                            "zIndex": "-1",
+                            "position": "absolute"
+                        },
+                        "effects": {
+                            "objectFit": "cover"
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "lazyLoading": {
+                                "enabled": false,
+                                "threshold": 0.1
+                            },
+                            "optimization": "auto"
+                        },
+                        "general": {
+                            "customId": "desktop-background",
+                            "isVisible": true,
+                            "customClasses": [
+                                "bg-image",
+                                "desktop-only"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465191,
+                    "updatedAt": 1750215465191,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 67,
+                    "selectorId": "case_study_subtitle",
+                    "blockType": "TEXT",
+                    "positionOrder": 18,
+                    "contentData": {
+                        "text": "Innovation Through Design",
+                        "language": "EN"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "60px 0 20px 0",
+                            "padding": "0 20px"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "24px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#2c3e50",
+                            "fontSize": "28px",
+                            "textAlign": "center",
+                            "fontWeight": "600",
+                            "lineHeight": "1.3"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "section-subtitle",
+                            "isVisible": true,
+                            "customClasses": [
+                                "subtitle",
+                                "section-heading"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465215,
+                    "updatedAt": 1750215465215,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 68,
+                    "selectorId": "case_study_subtext",
+                    "blockType": "TEXT",
+                    "positionOrder": 19,
+                    "contentData": {
+                        "text": "Explore how KeyShot empowers design teams to create photorealistic renderings and animations that bring products to life before they are manufactured. From concept to market, KeyShot accelerates the design process with intuitive tools and powerful AI-driven features.",
+                        "language": "EN"
+                    },
+                    "styleData": {
+                        "layout": {
+                            "margin": "0 auto 40px auto",
+                            "padding": "0 20px",
+                            "maxWidth": "700px"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "typography": {
+                                    "fontSize": "15px"
+                                }
+                            }
+                        },
+                        "typography": {
+                            "color": "#6c757d",
+                            "fontSize": "16px",
+                            "textAlign": "center",
+                            "fontWeight": "400",
+                            "lineHeight": "1.6"
+                        }
+                    },
+                    "settingsData": {
+                        "general": {
+                            "customId": "section-description",
+                            "isVisible": true,
+                            "customClasses": [
+                                "subtext",
+                                "section-description"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465238,
+                    "updatedAt": 1750215465238,
+                    "parentBlockId": 49
+                },
+                {
+                    "id": 69,
+                    "selectorId": "case_study_banner_bg_mb",
+                    "blockType": "IMAGE",
+                    "positionOrder": 20,
+                    "contentData": {
+                        "title": "Mobile Background",
+                        "altText": "Mobile-optimized abstract background pattern",
+                        "caption": "Mobile background with responsive design elements",
+                        "imageUrl": "https://picsum.photos/768/1024",
+                        "metadata": {
+                            "format": "JPEG",
+                            "fileSize": "150KB",
+                            "colorSpace": "sRGB"
+                        },
+                        "dimensions": {
+                            "width": 768,
+                            "height": 1024,
+                            "aspectRatio": "3:4"
+                        },
+                        "mediaFileId": 3019
+                    },
+                    "styleData": {
+                        "layout": {
+                            "top": "0",
+                            "left": "0",
+                            "width": "100%",
+                            "height": "100%",
+                            "zIndex": "-1",
+                            "position": "absolute"
+                        },
+                        "effects": {
+                            "objectFit": "cover"
+                        },
+                        "responsive": {
+                            "mobile": {
+                                "display": "block"
+                            },
+                            "desktop": {
+                                "display": "none"
+                            }
+                        }
+                    },
+                    "settingsData": {
+                        "content": {
+                            "lazyLoading": {
+                                "enabled": false,
+                                "threshold": 0.1
+                            },
+                            "optimization": "auto"
+                        },
+                        "general": {
+                            "customId": "mobile-background",
+                            "isVisible": true,
+                            "customClasses": [
+                                "bg-image",
+                                "mobile-only"
+                            ]
+                        }
+                    },
+                    "creatorUserId": 1,
+                    "updaterUserId": 1,
+                    "createdAt": 1750215465255,
+                    "updatedAt": 1750215465255,
+                    "parentBlockId": 49
                 }
-            },
-            "creatorUserId": 1,
-            "updaterUserId": 1,
-            "createdAt": 1750174036604,
-            "updatedAt": 1750174036604
+            ]
         }
     ]
 }

@@ -14,7 +14,7 @@
     </div>
 
     <!-- Main content -->
-    <div v-else-if="pageData" class="case-study-content">
+    <div v-else-if="pageData" class="case-study-content" style="display: flex;justify-content: center; align-items: center;">
       <!-- SEO Meta tags would be set here in a real app -->
 
       <!-- Render all content blocks in order -->
@@ -38,6 +38,7 @@
 import { ref, computed, onMounted } from 'vue'
 import ContentBlockRenderer from '../components/ContentBlockRenderer.vue'
 import type { Page } from '../types/content-block.types'
+import { organizeBlocksIntoTree, validateBlockTree } from '../utils/block-utils'
 
 // Reactive state
 const loading = ref(true)
@@ -48,8 +49,18 @@ const pageData = ref<Page | null>(null)
 const sortedContentBlocks = computed(() => {
   if (!pageData.value?.contentBlocks) return []
 
-  // Sort blocks by positionOrder
-  return [...pageData.value.contentBlocks].sort((a, b) => a.positionOrder - b.positionOrder)
+  // Organize blocks into tree structure for proper nesting
+  const organizedBlocks = pageData.value.contentBlocks
+
+  // Validate the block tree structure
+  const validation = validateBlockTree(organizedBlocks)
+  if (!validation.isValid) {
+    console.warn('Block tree validation errors:', validation.errors)
+  }
+
+
+
+  return organizedBlocks
 })
 
 // Methods

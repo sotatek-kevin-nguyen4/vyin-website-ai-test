@@ -4,6 +4,7 @@
     :content="block.contentData"
     :styles="block.styleData"
     :settings="block.settingsData"
+    :children="block.children"
     :key="block.id"
     v-if="blockComponent"
   />
@@ -15,7 +16,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { ContentBlock } from '@/types/content-block.types'
+import type { ContentBlock } from '../types/content-block.types'
 
 // Import all block components
 import TextBlock from './blocks/TextBlock.vue'
@@ -27,6 +28,7 @@ import QuoteBlock from './blocks/QuoteBlock.vue'
 import LogoListBlock from './blocks/LogoListBlock.vue'
 import CardListBlock from './blocks/CardListBlock.vue'
 import SelectorBlock from './blocks/SelectorBlock.vue'
+import ContainerBlock from './blocks/ContainerBlock.vue'
 
 interface Props {
   block: ContentBlock
@@ -45,6 +47,7 @@ const blockComponentMap = {
   LOGO_LIST: LogoListBlock,
   CARD_LIST: CardListBlock,
   SELECTOR: SelectorBlock,
+  CONTAINER: ContainerBlock,
   // Add more block types as needed
   VIDEO: null, // Not implemented yet
   HERO_BANNER: null, // Not implemented yet

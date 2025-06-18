@@ -5,6 +5,7 @@
     :class="[
       'cta-block',
       `cta-${content.ctaType}`,
+      content.icon?.position ? `cta-icon-${content.icon.position}` : 'cta-no-icon',
       ...(settings.general?.customClasses || [])
     ]"
     :style="computedStyles"
@@ -15,13 +16,23 @@
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
-    <span v-if="content.icon?.position === 'left'" class="cta-icon cta-icon-left">
+    <span v-if="content.icon?.position === 'top'" class="cta-icon cta-icon-top">
       <i :class="`icon-${content.icon.name}`"></i>
     </span>
-    
-    <span class="cta-text">{{ content.text }}</span>
-    
-    <span v-if="content.icon?.position === 'right'" class="cta-icon cta-icon-right">
+
+    <div class="cta-content" :class="`cta-content-${content.icon?.position || 'none'}`">
+      <span v-if="content.icon?.position === 'left'" class="cta-icon cta-icon-left">
+        <i :class="`icon-${content.icon.name}`"></i>
+      </span>
+
+      <span class="cta-text">{{ content.text }}</span>
+
+      <span v-if="content.icon?.position === 'right'" class="cta-icon cta-icon-right">
+        <i :class="`icon-${content.icon.name}`"></i>
+      </span>
+    </div>
+
+    <span v-if="content.icon?.position === 'bottom'" class="cta-icon cta-icon-bottom">
       <i :class="`icon-${content.icon.name}`"></i>
     </span>
   </component>
@@ -42,7 +53,7 @@ const isHovered = ref(false)
 
 const computedStyles = computed(() => {
   const styles: Record<string, string> = {}
-  
+
   // Apply layout styles
   if (props.styles.layout) {
     const layout = props.styles.layout
@@ -56,7 +67,7 @@ const computedStyles = computed(() => {
     if (layout.textAlign) styles.textAlign = layout.textAlign
     if (layout.zIndex) styles.zIndex = layout.zIndex
   }
-  
+
   // Apply typography styles
   if (props.styles.typography) {
     const typography = props.styles.typography
@@ -68,14 +79,14 @@ const computedStyles = computed(() => {
     if (typography.textAlign) styles.textAlign = typography.textAlign
     if (typography.textDecoration) styles.textDecoration = typography.textDecoration
   }
-  
+
   // Apply background styles
   if (props.styles.background) {
     const background = props.styles.background
     if (background.color) styles.backgroundColor = background.color
     if (background.gradient) styles.background = background.gradient
   }
-  
+
   // Apply border styles
   if (props.styles.border) {
     const border = props.styles.border
@@ -84,7 +95,7 @@ const computedStyles = computed(() => {
     if (border.color) styles.borderColor = border.color
     if (border.radius) styles.borderRadius = border.radius
   }
-  
+
   // Apply effects
   if (props.styles.effects) {
     const effects = props.styles.effects
@@ -95,7 +106,7 @@ const computedStyles = computed(() => {
     if (effects.transition) styles.transition = effects.transition
     if (effects.cursor) styles.cursor = effects.cursor
   }
-  
+
   // Apply hover effects if hovered
   if (isHovered.value && props.settings.content?.animationEffects?.hover) {
     const hoverStyles = props.settings.content.animationEffects.hover
@@ -110,7 +121,7 @@ const computedStyles = computed(() => {
       }
     })
   }
-  
+
   return styles
 })
 
@@ -126,12 +137,12 @@ const handleClick = (event: MouseEvent) => {
       element.style.transform = ''
     }, 150)
   }
-  
+
   // Handle navigation for button type
   if (props.content.ctaType === 'button') {
     window.location.href = props.content.url
   }
-  
+
   // Track analytics
   if (props.settings.content?.clickTracking?.enabled) {
     console.log('CTA clicked:', {
@@ -162,6 +173,35 @@ const handleMouseLeave = () => {
   transition: all 0.3s ease;
 }
 
+/* Adjust flex direction based on icon position */
+.cta-block.cta-icon-top,
+.cta-block.cta-icon-bottom {
+  flex-direction: column;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-content-top,
+.cta-content-bottom {
+  flex-direction: row;
+}
+
+.cta-content-left {
+  flex-direction: row;
+}
+
+.cta-content-right {
+  flex-direction: row;
+}
+
+.cta-content-none {
+  flex-direction: row;
+}
+
 .cta-button {
   /* Button-specific styles */
 }
@@ -173,6 +213,20 @@ const handleMouseLeave = () => {
 .cta-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.cta-icon-top,
+.cta-icon-bottom {
+  align-self: center;
+}
+
+.cta-icon-left {
+  order: -1;
+}
+
+.cta-icon-right {
+  order: 1;
 }
 
 .cta-text {
